@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/color_181B2C">
+
+    <include
+        layout="@layout/common_toolbar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/coins_type_select_ly"
+        android:layout_width="@dimen/dp160"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@mipmap/bg_select_ly"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_select_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/dp15"/>
+
+        <ImageView
+            android:id="@+id/img_select_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@mipmap/icon_arrow_gray_down"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/two_dimension_code"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp120"
+        android:layout_marginTop="@dimen/dp20"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_FFFFFF"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="@dimen/dp13"
+        android:text="SDFKAGDDGDGJJKGJASJJ"/>
+    
+    <Button
+        android:layout_width="@dimen/dp180"
+        android:layout_height="@dimen/dp35"
+        android:gravity="center"
+        android:text="@string/str_copy_address"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@mipmap/bg_blue_btn"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/dp15"/>
+
+    <Button
+        android:layout_width="@dimen/dp180"
+        android:layout_height="@dimen/dp35"
+        android:gravity="center"
+        android:text="@string/str_two_save_dimension"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@mipmap/bg_save_dimension_btn"
+        android:textColor="@color/color_0994FE"
+        android:textSize="@dimen/dp15"/>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_kindly_reminder"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_0994FE"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_1_gsg_2_10_30_3_20usdt_4_5"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_C3CDFF"/>
+    </LinearLayout>
+
+</LinearLayout>

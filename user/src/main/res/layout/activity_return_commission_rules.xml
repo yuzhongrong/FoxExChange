@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_return_rules"
+            android:textColor="@color/color_0994FE"
+            android:textSize="@dimen/dp12"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="@dimen/dp12"
+            android:lineSpacingExtra="@dimen/dp10"
+            android:text="1、好友接受邀请后，没产生一笔真实交易手续费，都会产生相应比例的返佣。\n2、返佣的形式以GSG的形式返佣到您的交易账户。\n3、邀请好友注册、实名、在币币交易区完成交易以及完成平台账户的充值都会赠送相应比例的GSG。\n4、邀请的好友交易返佣当日统计，次日晚到账；返佣额（USDT）=实际产生交易量*交易手续费比例*返佣比例。\n5、邀请人享受好友交易返佣有效时长以被邀请人实际注册的时间开始进行计算，到达有效时长（120天）后，您将不再享受该邀请人交易产生手续费的返佣。\n6、如果被邀请人违反平台邀请返佣的相关风控规则，其手续费将不会返还给邀请人，同时被邀人的邀请状态变成“已失效”，产生的返佣交易记录状态变成“返佣无效”。\n7、返佣规则如有调整，会以邮件或者平台公告的形式通知，最终解释权归海特币交易所所有。"
+            android:textColor="@color/color_5E6683"/>
+
+    </LinearLayout>
+
+</LinearLayout>

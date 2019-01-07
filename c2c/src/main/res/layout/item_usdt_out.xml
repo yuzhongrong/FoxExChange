@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp130"
+    android:background="@color/color_181B2C"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_ff32395e_bg"
+        android:padding="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+
+        >
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/dp22"
+            android:layout_height="@dimen/dp22"
+            android:src="@mipmap/icon_avatar"
+            android:scaleType="centerCrop"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp150"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_marginLeft="@dimen/dp10"
+
+            >
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nickname_demo"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dp10"
+
+                />
+
+            <TextView
+                android:id="@+id/values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_c2c_space_default"
+                android:textColor="#ffc3cdff"
+                android:textSize="11sp"
+                android:layout_below="@+id/nickname"
+                android:layout_marginTop="@dimen/dp8"
+                />
+
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_amount"
+                android:textColor="#ffc3cdff"
+                android:textSize="11sp"
+                android:layout_below="@+id/values"
+                android:layout_marginTop="@dimen/dp8"
+                />
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/icon_wx"
+
+
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/icon_back"
+                    android:layout_marginLeft="@dimen/dp10"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/icon_pay"
+                    android:layout_marginLeft="@dimen/dp10"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp150"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_alignParentRight="true"
+
+            >
+
+            <TextView
+                android:id="@+id/id_simple_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_simpleprice"
+                android:textColor="@color/color_ffc3cdff"
+                android:textSize="@dimen/dp11"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView
+                android:id="@+id/id_simple_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_default"
+                android:textColor="@color/color_FF5755"
+                android:textSize="@dimen/dp19"
+                android:layout_below="@+id/id_simple_price"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/buy"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="wrap_content"
+                android:text="@string/exchange_sale"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dp11"
+                android:layout_below="@+id/id_simple_price_value"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shap_round_solid_ff5755_5"
+                android:padding="@dimen/dp5"
+                android:gravity="center"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

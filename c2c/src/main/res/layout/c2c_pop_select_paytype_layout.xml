@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    >
+
+<LinearLayout
+    android:id="@+id/pop_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="@dimen/dp15"
+    android:padding="@dimen/dp9"
+    android:layout_marginRight="@dimen/dp15"
+    android:layout_marginLeft="@dimen/dp15"
+    android:background="@drawable/view_c2c_paytype_select_notop_corner_dialog_bg"
+
+
+   >
+
+    <TextView
+        android:id="@+id/c2c_top_menu_item1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_paytype_value"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+
+        />
+
+    <View
+       style="@style/line_f8f8f8" />
+
+    <TextView
+        android:id="@+id/c2c_top_menu_item2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_c2c_pay_up"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+
+
+        />
+
+    <View
+        style="@style/line_f8f8f8" />
+    <TextView
+        android:id="@+id/c2c_top_menu_item3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_c2c_pay_ali"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+
+        />
+    <View
+        style="@style/line_f8f8f8" />
+
+    <TextView
+        android:id="@+id/c2c_top_menu_item4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_c2c_bank_account1"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
+
+</RelativeLayout>

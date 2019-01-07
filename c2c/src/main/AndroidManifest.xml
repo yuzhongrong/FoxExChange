@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.foxexchange.c2c"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools">
+
+  <application>
+
+      <activity android:name=".activitys.C2CBuyActivity"
+          android:screenOrientation="portrait"
+          />
+
+
+
+      <activity android:name=".activitys.C2CBuyInfoActivity"
+          android:screenOrientation="portrait"
+          />
+
+      <activity android:name=".activitys.C2CAppealActivity"
+          android:screenOrientation="portrait"
+          />
+
+
+      <activity android:name=".activitys.C2CPayTypeListActivity"
+          android:screenOrientation="portrait"
+          />
+
+      <activity android:name=".activitys.C2CAddPayTypeActivity"
+          android:screenOrientation="portrait"
+          />
+
+
+      <activity android:name=".activitys.C2COrderCenterActivity"
+          android:screenOrientation="portrait"
+          />
+
+
+      <activity android:name=".activitys.C2CSellInfoActivity"
+          android:screenOrientation="portrait"
+          />
+
+
+
+
+  </application>
+
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_181B2C"
+    android:padding="@dimen/dp15"
+    android:gravity="center_vertical"
+
+   >
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/c2c_pay_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_c2c_please_pay"
+        android:textColor="@color/color_ff00a4f1"
+        android:textSize="@dimen/dp23" />
+
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/c2c_pay_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_c2c_paysuccess_tip"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp11"
+        android:layout_below="@+id/c2c_pay_state"
+        android:layout_marginTop="@dimen/dp5"
+        />
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp21"
+        >
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_c2c_contact"
+            android:textColor="@color/color_ff00a4f1"
+            android:textSize="@dimen/dp11"
+            android:drawableTop="@mipmap/icon_chat_history"
+            android:drawablePadding="@dimen/dp7"
+            android:layout_marginTop="@dimen/dp6"
+
+            />
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</RelativeLayout>

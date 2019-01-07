@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_user_email_address"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="@dimen/dp13"
+            android:textColor="@color/color_5E6683"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:background="@mipmap/bg_gray_et">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                android:background="@color/color_00000000"
+                android:hint="@string/str_user_please_input_the_binding_email_address"
+                android:textColorHint="@color/color_A5A5A5"
+                android:paddingLeft="@dimen/dp10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/color_000000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_user_email_verification_code"
+            android:layout_marginTop="@dimen/dp27"
+            android:textSize="@dimen/dp13"
+            android:textColor="@color/color_5E6683"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:background="@mipmap/bg_gray_et">
+
+            <EditText
+                android:id="@+id/et_new_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/str_user_please_input_email_identification_pwd"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                android:textColorHint="@color/color_A5A5A5"
+                android:textColor="@color/color_000000"
+                android:background="@color/color_00000000"
+                android:paddingLeft="@dimen/dp10"/>
+
+            <View android:layout_width="@dimen/dp1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@color/color_cccccc"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:text="@string/str_get_identify_code"
+                    android:textColor="@color/color_0994FE"
+                    android:textSize="@dimen/dp14"/>
+
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    app:timeTextColor="@color/color_0994FE"
+                    app:suffixTextColor="@color/color_0994FE"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp30"
+            android:text="@string/str_user_bind"
+            android:textSize="@dimen/dp18"
+            android:gravity="center"
+            android:textColor="@color/color_FFFFFF"
+            android:background="@mipmap/bg_blue_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

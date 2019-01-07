@@ -1,0 +1,54 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<cn.bingoogolapple.qrcode.zxing.ZXingView-->
+        <!--android:id="@+id/zxingview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:qrcv_animTime="1000"-->
+        <!--app:qrcv_borderColor="@color/colorPrimary"-->
+        <!--app:qrcv_borderSize="@dimen/dp1"-->
+        <!--app:qrcv_cornerColor="@color/colorPrimary"-->
+        <!--app:qrcv_cornerLength="20dp"-->
+        <!--app:qrcv_cornerSize="3dp"-->
+        <!--app:qrcv_maskColor="@color/bg_pop"-->
+        <!--app:qrcv_rectWidth="@dimen/dp200"-->
+        <!--app:qrcv_scanLineColor="@color/colorPrimary"-->
+        <!--app:qrcv_scanLineSize="2.5dp"-->
+        <!--app:qrcv_topOffset="@dimen/dp180" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="@dimen/dp390"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/home_zxing_text"-->
+        <!--android:textColor="@color/white" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/color_666666"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="visible">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/home_capture_flash"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@mipmap/ico_zxing_sck"-->
+            <!--android:clickable="true"-->
+            <!--android:tag="1"-->
+            <!--tools:ignore="ContentDescription" />-->
+    <!--</LinearLayout>-->
+
+    <!--<include layout="@layout/blue_commontitle_layout" />-->
+</RelativeLayout>

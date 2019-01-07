@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    android:id="@+id/swipeMenuLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:minHeight="@dimen/dp60"
+    android:layout_height="@dimen/dp96"
+    android:clickable="true"
+    android:paddingBottom="1dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_ffffff_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_up" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="UP"
+                android:textColor="@color/color_000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加时间："
+                android:textSize="@dimen/dp13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-12-13 12:60:60"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提币地址："
+                android:textSize="@dimen/dp13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sfasdfsad4sd5f4s5d4f5ds45"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+    <View android:layout_width="@dimen/dp5"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_address_detail"
+        android:textSize="@dimen/dp13"
+        android:layout_width="@dimen/dp75"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_left_blue"
+        android:text="查看\n详情"
+        android:textColor="@color/color_FFFFFF"/>
+
+    <View android:layout_width="@dimen/dp1"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_delete_address"
+        android:textSize="@dimen/dp13"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_width="@dimen/dp75"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_right_orange"
+        android:clickable="true"
+        android:text="删除\n地址"
+        android:textColor="@color/color_FFFFFF"/>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

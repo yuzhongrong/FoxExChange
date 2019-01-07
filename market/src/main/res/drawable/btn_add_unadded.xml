@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--solid用以指定内部填充色-->
+    <solid android:color="@color/color_FF5F5F"/>
+    <!--可以定义描边的宽度，颜色，虚实线等-->
+    <stroke
+        android:width="@dimen/dp1"
+        android:color="@color/color_FF5F5F"
+        />
+    <corners android:topLeftRadius="4dp" android:topRightRadius="0dp" android:bottomLeftRadius="4dp" android:bottomRightRadius="0dp" />
+</shape>

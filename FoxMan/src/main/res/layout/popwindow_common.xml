@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginRight="@dimen/dp50"
+        android:background="@drawable/shape_round_solid_ffffff_5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp26"
+        android:paddingTop="@dimen/dp26">
+
+        <TextView
+            android:id="@+id/tv_pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp16"/>
+
+        <TextView
+            android:id="@+id/tv_pop_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp26"
+            android:layout_marginRight="@dimen/dp26"
+            android:layout_marginTop="@dimen/dp26"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pop_negative"
+                android:layout_width="@dimen/dp86"
+                android:layout_height="@dimen/dp34"
+                android:layout_marginTop="@dimen/dp40"
+                android:gravity="center"
+                android:background="@drawable/shape_round_stroke_ff9393_45"
+                android:text="取消"
+                android:textColor="@color/color_e88272"
+                android:textSize="@dimen/sp14"/>
+
+            <Button
+                android:id="@+id/btn_pop_positive"
+                android:layout_width="@dimen/dp86"
+                android:layout_height="@dimen/dp34"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp40"
+                android:background="@drawable/shape_round_gradient_fe8483_e88272_45"
+                android:text="确定"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/sp14"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

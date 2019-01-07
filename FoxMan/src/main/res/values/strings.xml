@@ -1,0 +1,35 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 日期选择控件 -->
+
+    <!--add 2018/2/23-->
+    <string name="no_network">无网络,请再试一次</string>
+    <string name="abnormal_server">服务器异常</string>
+    <string name="parse_the_exception">解析异常</string>
+    <string name="parse_the_exception_null">data:null异常</string>
+    <string name="certificate_verification_is_abnormal">证书验证不正常</string>
+    <string name="connection_timed_out">连接超时</string>
+    <string name="tip_select_country">请选择国家</string>
+    <string name="tv_again_click_out">再点一次退出</string>
+
+    <!--下拉刷新 基类默认配置字段-->
+    <string name="str_head_pulldown"></string>
+    <string name="str_header_refreshing"></string>
+    <string name="str_head_release"></string>
+    <string name="str_header_finish"></string>
+    <string name="str_header_failed"></string>
+    <string name="str_header_all_finish"></string>
+    <string name="footer_loading"></string>
+    <string name="footer_finish"></string>
+
+    <string name="send">发送</string>
+
+    <string name="voice_rec">手指上滑，取消发送</string>
+    <string name="voice_cancel">松开手指，取消发送</string>
+    <string name="voice_short">录音时间太短</string>
+    <string name="voice_failure">录音失败！</string>
+    <string name="send_audio_fail">发送语音失败，文件长度为0或语音权限没有开启</string>
+
+
+
+</resources>

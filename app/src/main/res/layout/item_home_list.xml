@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp80"
+    android:minHeight="@dimen/dp60"
+    android:background="@color/color_1E2238"
+    android:gravity="center_vertical"
+  >
+
+    <LinearLayout
+        android:id="@+id/root_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp15"
+        >
+
+        <TextView
+            android:id="@+id/tr_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_customer_gui"
+            android:textSize="@dimen/dp14"
+            android:textColor="@color/color_ffffff"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/time_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_a_month"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_5A6183"
+            android:layout_below="@+id/tr_tip"
+            android:layout_marginTop="@dimen/dp7"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp15"
+        >
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_demo_time"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_c3cdff"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp4"
+
+            />
+
+
+        <TextView
+            android:id="@+id/rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_demo_256"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_c3cdff"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp7"
+            android:layout_below="@+id/tr_price_tip_value"
+            android:drawableLeft="@drawable/tj"
+            android:drawablePadding="@dimen/dp10"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

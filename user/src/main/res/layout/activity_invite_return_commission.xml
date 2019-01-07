@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_181B2C"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/color_181B2C">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/dp10"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/back"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_invite_return_commission"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/dp18"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_return_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textColor="@color/color_7582C5"
+            android:textSize="@dimen/dp13"
+            android:text="@string/str_return_commission_detail" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_my_invite"
+            android:textColor="@color/color_00A4F1"
+            android:textSize="@dimen/dp24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_through_the_way_of_inviting"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_C3CDFF"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp15"
+            android:background="@color/color_32395E"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_exclusive_invite_code"
+            android:textSize="@dimen/dp12"
+            android:layout_marginTop="@dimen/dp15"
+            android:textColor="@color/color_C3CDFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10">
+
+            <TextView
+                android:layout_width="@dimen/dp0"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg_et_input1"
+                android:paddingLeft="@dimen/dp15"
+                android:text="GHDHSFHDSHJHFSHH"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dp15"
+                android:textColor="@color/color_FFFFFF"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_invite_copy_code"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="@string/str_copy_invite_code"
+                android:textColor="@color/color_0994FE"
+                android:background="@mipmap/bg_invite_btn"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_exclusive_link_for_share"
+            android:layout_marginTop="@dimen/dp30"
+            android:textSize="@dimen/dp12"
+            android:textColor="@color/color_C3CDFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10">
+
+            <TextView
+                android:layout_width="@dimen/dp0"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg_et_input1"
+                android:paddingLeft="@dimen/dp15"
+                android:text="http://www.xxx.com"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dp13"
+                android:textColor="@color/color_FFFFFF"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_invite_copy_link"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="@string/str_copy_link_for_share"
+                android:textColor="@color/color_0994FE"
+                android:background="@mipmap/bg_invite_btn"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp35"
+            android:textSize="@dimen/dp12"
+            android:text="@string/str_exclusive_poster_of_two_dimension_code"
+            android:textColor="@color/color_C3CDFF"/>
+
+        <Button
+            android:id="@+id/btn_invite_select_poster"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:text="@string/str_select_my_only_invite_poster"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/color_0994FE"
+            android:background="@mipmap/bg_select_ly"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_invite_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_return_commission_rules"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/color_C3CDFF"
+                android:textSize="@dimen/dp13"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

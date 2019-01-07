@@ -1,0 +1,59 @@
+<resources>
+    <!-- 实线 -->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp0.5
+        </item>
+        <item name="android:background">@color/color_343B60</item>
+    </style>
+
+
+
+
+
+    <!-- 带左右边距横线 -->
+    <style name="marginLeftRightLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp0.5</item>
+        <item name="android:layout_marginLeft">@dimen/dp10</item>
+        <item name="android:layout_marginRight">@dimen/dp10</item>
+        <item name="android:background">@color/color_6B739D</item>
+    </style>
+
+    <!-- 左右没有margin的 -->
+    <style name="marginLeftRightLineNomargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp0.5</item>
+        <item name="android:background">@color/color_6B739D</item>
+    </style>
+
+    <!-- 带上下边距的竖线 -->
+    <style name="marginTopBottomLine">
+        <item name="android:layout_width">@dimen/dp0.5</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dp5</item>
+        <item name="android:layout_marginBottom">@dimen/dp5</item>
+        <item name="android:background">@color/color_343B60</item>
+    </style>
+
+
+
+    <style name="pay_layout_textstype">
+
+        <item name="android:textColor">@color/color_C3CDFF</item>
+        <item name="android:textSize">@dimen/dp12</item>
+
+    </style>
+
+
+    <style name="pay_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+
+    </style>
+
+
+
+
+
+</resources>

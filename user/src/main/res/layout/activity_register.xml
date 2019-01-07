@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/color_181B2C">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:text="@string/str_cancel"
+            android:textColor="@color/color_7582C5"
+            android:textSize="@dimen/dp13" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_register"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/dp18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_phone_or_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/str_register_by_phone"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/dp18" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp110"
+        android:layout_marginTop="@dimen/dp10"
+        android:src="@mipmap/icon_login_and_register_logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:padding="@dimen/dp15">
+
+        <LinearLayout
+            android:id="@+id/phone_register_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:background="@mipmap/bg_register_et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="+86"
+                    android:textColor="@color/color_7582C5"
+                    android:textSize="@dimen/dp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:src="@mipmap/icon_arrow_gray_down" />
+
+                <View style="@style/marginTopBottomLine" />
+
+                <EditText
+                    android:id="@+id/et_register_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_00000000"
+                    android:hint="@string/str_please_input_your_phone"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/dp10"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textColorHint="@color/color_40465F"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp28"
+                android:background="@mipmap/bg_register_et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@mipmap/icon_password_lock" />
+
+                <EditText
+                    android:id="@+id/et_register_phone_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_00000000"
+                    android:hint="@string/str_please_input_identify_code"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textColorHint="@color/color_40465F"
+                    android:textSize="@dimen/dp15" />
+
+                <com.cjwsc.idcm.widget.edittext.EndEditText
+                    android:id="@+id/tv_register_get_phone_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="@string/str_get_identify_code"
+                    android:textColor="@color/color_0994FE"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@mipmap/bg_blue_btn"
+                android:text="@string/str_next_step"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/dp15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_register_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:background="@mipmap/bg_register_et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@mipmap/icon_email" />
+
+                <EditText
+                    android:id="@+id/et_register_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_00000000"
+                    android:hint="@string/str_please_input_your_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textColorHint="@color/color_40465F"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp28"
+                android:background="@mipmap/bg_register_et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:src="@mipmap/icon_password_lock" />
+
+                <EditText
+                    android:id="@+id/et_register_email_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_00000000"
+                    android:hint="@string/str_please_identify_code_from_email"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textColorHint="@color/color_40465F"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_register_get_email_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="@string/str_get_identify_code"
+                    android:textColor="@color/color_0994FE"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@mipmap/bg_email_register_bgn"
+                android:text="@string/str_next_step"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/dp15" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_change_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:text="@string/str_register_by_email"
+        android:textColor="@color/color_0994FE"
+        android:textSize="@dimen/dp14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/to_login_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/str_have_account"
+                android:textColor="@color/color_7582C5"
+                android:textSize="@dimen/dp13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/str_to_login"
+                android:textColor="@color/color_0994FE"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

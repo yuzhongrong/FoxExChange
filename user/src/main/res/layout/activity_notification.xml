@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_toolbar"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:id="@+id/user_notification_head"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp15"
+                android:textSize="@dimen/dp15"
+                android:textColor="@color/color_333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帐号注册成功"
+                />
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:text="2018-11-09 18:00:00"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+           <!-- <TextView
+                android:id="@+id/user_tv_notification_detail"
+                android:layout_below="@+id/user_notification_head"
+                android:layout_marginTop="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:singleLine="false"
+                android:maxLines="100"
+                android:ellipsize="end"
+                android:text="帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功。"
+                android:layout_height="wrap_content"
+                />-->
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                android:layout_marginTop="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/user_notification_head"
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/expand_text_view"
+                android:layout_height="wrap_content"
+                expandableTextView:maxCollapsedLines="1"
+                expandableTextView:animDuration="200">
+                <TextView
+                    android:id="@id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="#666666" />
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp4"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/transparent"/>
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        </RelativeLayout>
+        <View
+            android:background="@color/color_d5d5d5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_height="@dimen/dp1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:id="@+id/user_notification_head1"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp15"
+                android:textSize="@dimen/dp15"
+                android:textColor="@color/color_333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资金密码设置成功"
+                />
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:text="2018-11-09 18:00:00"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                android:id="@+id/expand_text_view1"
+                android:layout_marginTop="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/user_notification_head1"
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                expandableTextView:maxCollapsedLines="1"
+                expandableTextView:animDuration="200">
+                <TextView
+                    android:id="@id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:text="帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功。"
+                    android:textColor="#666666" />
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp4"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/transparent"/>
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        </RelativeLayout>
+        <View
+            android:background="@color/color_d5d5d5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_height="@dimen/dp1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:id="@+id/user_notification_head2"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp15"
+                android:textSize="@dimen/dp15"
+                android:textColor="@color/color_333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资金密码设置成功"
+                />
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:text="2018-11-09 18:00:00"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                android:id="@+id/expand_text_view2"
+                android:layout_marginTop="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/user_notification_head2"
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                expandableTextView:maxCollapsedLines="1"
+                expandableTextView:animDuration="200">
+                <TextView
+                    android:id="@id/expandable_text"
+                    android:text="您的资金密码已经设置成功，注意保护资金密码。"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="#666666" />
+                <ImageButton
+                    android:id="@id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp4"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/transparent"/>
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        </RelativeLayout>
+        <View
+            android:background="@color/color_d5d5d5"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_height="@dimen/dp1"/>
+    </LinearLayout>
+</ScrollView>

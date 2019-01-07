@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_baseweplus_title"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="@dimen/dp37"
+                android:paddingBottom="0.1dp">
+
+    <TextView
+        android:id="@+id/tv_baseweplus_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/cf6f6f8"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        />
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dp8"
+        android:src="@mipmap/icon_money_type"
+        android:layout_width="@dimen/dp16"
+        android:layout_height="@dimen/dp16"
+        android:id="@+id/iv_title_icon"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_baseweplus_title"/>
+
+    <TextView
+        android:id="@+id/tv_baseweplus_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp5"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/cf6f6f8"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp10"
+        android:id="@+id/tv_baseweplus_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp14"
+        android:paddingRight="@dimen/dp14"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/icon_back_white"
+        android:layout_above="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_e1e1e1"
+        android:id="@+id/view"/>
+</RelativeLayout>

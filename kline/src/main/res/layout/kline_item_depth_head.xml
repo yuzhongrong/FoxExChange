@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/color_181b2c"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="时间"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp10"
+        android:textColor="@color/color_ffc3cdff" />
+
+    <TextView
+        android:id="@+id/orientation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="方向"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp10"
+        android:textColor="@color/color_ffc3cdff" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="价格"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        android:layout_marginLeft="@dimen/dp10"
+        android:textColor="@color/color_ffc3cdff" />
+
+
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:gravity="right"
+        android:text="数量"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/dp10"
+        android:textColor="@color/color_ffc3cdff" />
+
+
+</LinearLayout>

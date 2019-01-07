@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp75"
+    android:layout_height="@dimen/dp75">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp75"
+        android:layout_height="@dimen/dp75"
+       >
+        <com.cjwsc.idcm.base.ui.view.roundimge.RoundImageView
+            android:id="@+id/iv_small_image"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp65"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            app:riv_radius="@dimen/dp4"
+            android:src="@mipmap/icon_upload"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/dp18"
+            android:layout_height="@dimen/dp18"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_delete_image" />
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="0/5"
+            android:textColor="@color/color_999999" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/color_181B2C">
+    
+    <include layout="@layout/common_toolbar"/>
+    
+    <ImageView
+        android:layout_width="@dimen/dp160"
+        android:layout_height="@dimen/dp160"
+        android:layout_marginTop="@dimen/dp46"
+        android:src="@mipmap/icon_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp18"
+        android:text="FASDFKHKHKDSFK"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/dp13"/>
+    
+    <Button
+        android:id="@+id/btn_google_copy"
+        android:layout_width="@dimen/dp182"
+        android:layout_height="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp18"
+        android:gravity="center"
+        android:background="@mipmap/bg_invite_btn"
+        android:textSize="@dimen/dp13"
+        android:text="@string/str_copy"
+        android:textColor="@color/color_0994FE"/>
+
+    <Button
+        android:id="@+id/btn_google_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:gravity="center"
+        android:textSize="@dimen/dp18"
+        android:text="下一步"
+        android:layout_marginTop="@dimen/dp60"
+        android:textColor="@color/color_FFFFFF"
+        android:background="@mipmap/bg_blue_btn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="@dimen/dp13"
+        android:textColor="@color/color_C3CDFF"
+        android:text="@string/str_copy_two_dimension_code_and_save"/>
+
+</LinearLayout>

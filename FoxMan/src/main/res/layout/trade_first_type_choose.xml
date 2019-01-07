@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@mipmap/icon_trade_type_bg"
+    android:orientation="vertical">
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp9"
+        android:id="@+id/rc_trade_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

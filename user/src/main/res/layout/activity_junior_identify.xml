@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/input_message_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_FF5755" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="@string/str_nationality"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_nationality"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bg_gray_et"
+            android:hint="@string/str_China"
+            android:padding="@dimen/dp10"
+            android:textSize="@dimen/dp15"
+            android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+            android:singleLine="true"
+            android:textColor="@color/color_333333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_FF5755" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="@string/str_users_name"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_users_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bg_gray_et"
+            android:hint="建议不要跟真实姓名一样，设置后不能修改"
+            android:singleLine="true"
+            android:textSize="@dimen/dp15"
+            android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/color_333333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_FF5755" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="@string/str_name"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bg_gray_et"
+            android:hint="@string/str_please_write_down_your_real_name"
+            android:padding="@dimen/dp10"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+            android:textSize="@dimen/dp15"
+            android:textColor="@color/color_333333" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/color_FF5755" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="@string/str_id_card_num"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_id_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bg_gray_et"
+            android:hint="@string/str_please_write_down_your_real_id_card_number"
+            android:textSize="@dimen/dp15"
+            android:inputType="number"
+            android:digits="0123456789xyzXYZ"
+            android:maxLength="18"
+            android:padding="@dimen/dp10"
+            android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+            android:singleLine="true"
+            android:textColor="@color/color_333333" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@mipmap/bg_blue_btn"
+            android:gravity="center"
+            android:text="@string/str_identify"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/dp18" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_identify_personal_message_layout"/>
+
+</LinearLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ScrollView
+        android:id="@+id/kline_scrollview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="@dimen/dp0"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:scrollbars="none"
+
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_181b2c"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_181B2C">
+
+
+        <RelativeLayout
+            android:id="@+id/exchange_main_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_181B2C"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:src="@mipmap/icon_back_white"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="GSG/USDT"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableRight="@mipmap/icon_pulldown"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dp17"
+
+                />
+
+
+
+            <ImageView
+                android:id="@+id/exchange_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_exchange_private"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp55"
+
+                />
+
+
+
+
+            <ImageView
+                android:id="@+id/exchange_all_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_exchange_switch_screen_kline"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp17"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exchange_kline_base_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exchange_main_top"
+            android:background="@color/color_181B2C"
+            android:paddingBottom="@dimen/dp10"
+            >
+
+
+            <TextView
+                android:id="@+id/kline_tv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp27"
+                android:text="0000.0000↓"
+                android:textColor="@color/color_FF5755"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp17"
+
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/kline_tv_close"
+                android:layout_marginTop="@dimen/dp5"
+                >
+
+                <TextView
+
+                    android:id="@+id/exchange_current_cny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp14"
+                    android:text="---- CNY "
+                    android:textColor="@color/color_5A6183"
+                    android:layout_marginLeft="@dimen/dp15"
+
+
+
+                    />
+
+
+
+                <TextView
+
+                    android:id="@+id/kline_tv_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp14"
+                    android:text="-----%"
+                    android:layout_toRightOf="@+id/kline_tv_close"
+                    android:layout_below="@+id/kline_tv_close"
+                    android:textColor="@color/color_FF5755"
+
+
+                    />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_181B2C"
+            android:paddingBottom="@dimen/dp10"
+            android:layout_below="@+id/exchange_main_top"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            >
+
+            <LinearLayout
+                android:id="@+id/exchange_top_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_exchange_maxprice_24h"
+                    android:textColor="@color/color_5A6183"
+                    />
+
+                <TextView
+                    android:id="@+id/kline_value_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-----"
+                    android:textColor="@color/color_6470A9"
+                    android:layout_marginLeft="@dimen/dp30"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exchange_top_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/exchange_top_1"
+                android:layout_marginTop="@dimen/dp10"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_exchange_minprice_24h"
+                    android:textColor="@color/color_5A6183"
+                    />
+
+                <TextView
+
+                    android:id="@+id/kline_value_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-----"
+                    android:textColor="@color/color_6470A9"
+                    android:layout_marginLeft="@dimen/dp30"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/exchange_top_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/exchange_top_2"
+                android:layout_marginTop="@dimen/dp10"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_kline_amount"
+                    android:textColor="@color/color_5A6183"
+                    />
+
+                <TextView
+                    android:id="@+id/kline_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-----"
+                    android:textColor="@color/color_6470A9"
+                    android:layout_marginLeft="@dimen/dp30"
+                    />
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/exchange_buttom_commontablayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_below="@+id/exchange_kline_base_data"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10"
+            app:tl_indicator_color="@color/color_0994fe"
+            app:tl_indicator_corner_radius="@dimen/dp5"
+            app:tl_indicator_height="@dimen/dp2"
+            app:tl_indicator_width="@dimen/dp29"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/color_c3cdff"
+            app:tl_textUnselectColor="@color/color_6470a9"
+            android:layout_marginRight="@dimen/dp60"
+            app:tl_indicator_margin_bottom="@dimen/dp5"
+            app:tl_textsize="@dimen/dp12" />
+
+
+        <TextView
+            android:id="@+id/exchange_more"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:text="@string/str_exchange_more"
+            android:textColor="@color/color_6470a9"
+            android:textSize="@dimen/dp12"
+            android:gravity="center"
+            android:layout_below="@+id/exchange_kline_base_data"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp15"
+            android:drawableRight="@mipmap/icon_exchange_more"
+            android:drawablePadding="@dimen/dp3"
+
+
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/exchange_more"
+            android:background="@color/color_000000"
+            >
+
+            <include layout="@layout/view_kline_chart_top_ma" />
+
+            <com.android.com.kline.widgets.kline.MyCombinedChart
+                android:id="@+id/kline_chart_k"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp325"
+                android:background="@color/color_181b2c"
+
+                />
+
+            <com.android.com.kline.widgets.kline.MyCombinedChart
+                android:id="@+id/kline_chart_volume"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:background="@color/color_181b2c"
+
+
+             />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                >
+
+                <com.android.com.kline.widgets.kline.MyCombinedChart
+                    android:id="@+id/kline_chart_charts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.android.com.kline.widgets.kline.MyCombinedChart>
+
+                <ImageView
+                    android:id="@+id/kline_iv_refresh"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:src="@drawable/refresh" />
+
+                <TextView
+                    android:id="@+id/kline_tv_entity"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:text="@string/str_entity_macd"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_666666"/>
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+            <com.cjwsc.idcm.flycotablayout.SlidingTabLayoutInner
+                android:id="@+id/exchange_buttom_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp49"
+                app:tl_indicator_color="@color/color_0994fe"
+                app:tl_indicator_corner_radius="@dimen/dp5"
+                app:tl_indicator_height="@dimen/dp2"
+                app:tl_indicator_width="@dimen/dp49"
+                app:tl_tab_space_equal="true"
+                app:tl_textSelectColor="@color/color_c3cdff"
+                app:tl_textUnselectColor="@color/color_6470a9"
+                app:tl_indicator_margin_bottom="@dimen/dp5"
+                app:tl_textsize="@dimen/dp15"
+                app:tl_iconWidth="@dimen/dp150"
+                android:layout_marginRight="@dimen/dp133"
+
+                />
+        <View style="@style/gray_line_343b60"/>
+        <com.foxexchange.common.widgets.AutoHeightViewPager
+            android:focusable="false"
+            android:id="@+id/exchange_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:background="@color/color_1c2340"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp61"
+        android:gravity="center_vertical"
+        >
+        <Button
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_width="@dimen/dp161"
+            android:layout_height="@dimen/dp41"
+            android:text="@string/str_buy_in"
+            android:background="@drawable/bg_exchange_buyin"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_width="@dimen/dp161"
+            android:layout_height="@dimen/dp41"
+            android:text="@string/str_buy_in"
+            android:textColor="@color/color_ffffff"
+            android:background="@drawable/bg_exchange_saleout"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</LinearLayout>

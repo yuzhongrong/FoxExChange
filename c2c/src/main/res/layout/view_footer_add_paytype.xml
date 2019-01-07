@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
+
+
+    >
+
+    <TextView
+        android:id="@+id/c2c_add_paytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_0994FE"
+        android:textSize="@dimen/dp12"
+        android:text="@string/str_add_paytype_action"
+        android:background="@drawable/shape_ff0994fe_stroke_bg"
+        android:padding="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp48"
+
+
+        />
+
+
+
+</RelativeLayout>

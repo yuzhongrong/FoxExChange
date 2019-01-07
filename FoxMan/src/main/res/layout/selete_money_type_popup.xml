@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#60000000"
+                android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/ll_click_close"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/innerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_all"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <TextView
+                android:id="@+id/tv_money_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:textColor="@color/text_blue_seletor"
+                android:textSize="@dimen/sp12" />
+
+            <ImageView
+                android:id="@+id/iv_isShow_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_toRightOf="@+id/tv_money_type"
+                android:src="@mipmap/icon_language_selete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_btc"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <TextView
+                android:id="@+id/tv_money_btc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="BTC"
+                android:textColor="@color/text_blue_seletor"
+                android:textSize="@dimen/sp12" />
+
+            <ImageView
+                android:id="@+id/iv_isShow_bct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_toRightOf="@+id/tv_money_btc"
+                android:src="@mipmap/icon_language_selete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bch"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <TextView
+                android:id="@+id/tv_money_bch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="BCH"
+                android:textColor="@color/text_blue_seletor"
+                android:textSize="@dimen/sp12" />
+
+            <ImageView
+                android:id="@+id/iv_isShow_bch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_toRightOf="@+id/tv_money_bch"
+                android:src="@mipmap/icon_language_selete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15" />
+
+        <RelativeLayout
+            android:id="@+id/rl_usd"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+
+            <TextView
+                android:id="@+id/tv_money_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="USD"
+                android:textColor="@color/text_blue_seletor"
+                android:textSize="@dimen/sp12" />
+
+            <ImageView
+                android:id="@+id/iv_isShow_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_toRightOf="@+id/tv_money_usd"
+                android:src="@mipmap/icon_language_selete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15" />
+       <!-- <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_finalMoney_seletor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>-->
+
+    </LinearLayout>
+
+</LinearLayout>

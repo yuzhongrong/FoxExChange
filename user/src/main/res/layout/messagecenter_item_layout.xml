@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/user_notification_head1"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="资金密码设置成功"
+        />
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:text="2018-11-09 18:00:00"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/dp14"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_tv_notification_detail1"
+        android:layout_below="@+id/user_notification_head1"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:drawablePadding="25dp"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:drawableRight="@mipmap/icon_arrow_gray_down"
+        android:maxLines="100"
+        android:ellipsize="end"
+        android:text="帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功帐号注册成功。"
+        android:layout_height="wrap_content"
+        />
+    <View
+        android:layout_below="@+id/user_tv_notification_detail1"
+        android:background="@color/color_d5d5d5"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_height="@dimen/dp1"/>
+</RelativeLayout>

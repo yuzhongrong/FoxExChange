@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/dp46"
+    android:layout_height="@dimen/dp52"
+    android:paddingLeft="@dimen/dp2"
+    android:layout_marginLeft="@dimen/dp5"
+    android:layout_marginRight="@dimen/dp5">
+    <ImageView
+        android:id="@+id/iv_group_person"
+        android:layout_width="@dimen/dp46"
+        android:layout_height="@dimen/dp46"/>
+    <TextView
+        android:id="@+id/tv_group_commander"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp12"
+        android:textSize="@dimen/sp9"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="@drawable/shap_round_sololid_2eabfe_6"
+        android:text="团长"/>
+</RelativeLayout>

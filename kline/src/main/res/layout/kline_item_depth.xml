@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/color_181b2c"
+    >
+    <TextView
+        android:id="@+id/time"
+        style="@style/item_depth"
+        android:text="----"
+        android:layout_marginLeft="@dimen/dp10"
+       />
+
+    <TextView
+        android:id="@+id/orientation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="----"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@color/color_1dd189"
+        android:layout_marginRight="@dimen/dp10"
+      />
+
+    <TextView
+        android:id="@+id/price"
+        android:text="----"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp10"
+        style="@style/item_depth"
+        />
+
+
+
+    <TextView
+        android:id="@+id/num"
+        style="@style/item_depth"
+        android:gravity="right"
+        android:text="----"
+        android:layout_marginRight="@dimen/dp10"
+       />
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 日期选择控件 -->
+
+    <!--add 2018/2/23-->
+    <string name="no_network">无网络,请再试一次</string>
+    <string name="abnormal_server">服务器异常</string>
+    <string name="parse_the_exception">解析异常</string>
+    <string name="parse_the_exception_null">data:null异常</string>
+    <string name="certificate_verification_is_abnormal">证书验证不正常</string>
+    <string name="connection_timed_out">连接超时</string>
+
+</resources>

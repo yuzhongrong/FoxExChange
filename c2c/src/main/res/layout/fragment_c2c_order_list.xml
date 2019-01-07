@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lqr.recyclerview.LQRRecyclerView
+        android:id="@+id/my_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rv_divider_size="@dimen/dp1"
+        app:rv_divider_color="@color/color_343B60"/>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+package com.foxexchange.android.beans
+
+ data class HomeDataBean(var reconciliation:String
+                         , var amount:String,
+                         var value:String,
+                         var value1: String)

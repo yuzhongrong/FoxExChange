@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp8"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp135"
+        android:layout_weight="1"
+        android:background="@drawable/shape_round_whitesolide_radius8"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp5">
+
+        <TextView
+            android:id="@+id/tv_talktaste_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text="中国好声音中国好声音中国好声音中国好声音中国好声音"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_talktaste_article_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_talktaste_article_title"
+            android:lineSpacingExtra="@dimen/dp2"
+            android:text="中国好声音中国好声音中国好声音中国好声音中国好声音中国好声音中国好声音中国好声音中国好声音中国好声音中国好声音"
+            android:textColor="@color/color_333333"
+            android:lines="3"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_talktaste_article_messagenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@mipmap/icon_homepage_message"
+            android:text="0"
+            android:drawablePadding="@dimen/dp5"
+            android:paddingBottom="@dimen/dp8"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp10" />
+
+    </RelativeLayout>
+
+    <com.cjwsc.idcm.base.ui.view.roundimge.RoundImageView
+        android:id="@+id/iv_talktaste_articleimg"
+        android:layout_width="@dimen/dp125"
+        android:layout_height="@dimen/dp135"
+        android:layout_marginLeft="@dimen/dp8"
+        app:riv_radius="@dimen/dp8" />
+</LinearLayout>

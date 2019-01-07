@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_181B2C"
+    >
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_name"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="@string/str_c2c_name_hint"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/c2c_open_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_c2c_open_bank"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_open_bank_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="@string/str_c2c_select_open_bank"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/c2c_open_bank_sub_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开户支行（选填）"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_open_bank_sub_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="请填写开户支行名称"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/c2c_bank_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_c2c_bank_account"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_trade_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="请填写您的银行卡号"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/c2c_bank_pwd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_capital_password"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_bank_pwd_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="请填写您的资金密码"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+</LinearLayout>
+</RelativeLayout>

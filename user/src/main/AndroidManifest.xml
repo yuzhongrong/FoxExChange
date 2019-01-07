@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user">
+
+    <application>
+
+        <!-- 注册 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserRegisterActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <!-- 注册第二步 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserRegisterSecondActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <!-- 登录 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserLoginActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <!-- 重置密码 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserResetPasswordActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <!-- 重置密码第二步 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserResetPwdSecondActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的资产 -->
+        <activity
+            android:name="com.foxexchange.user.UserMyAssetKTActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 充币 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserRechargeCoinActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 提币 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserWithDrawCoinActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 划转 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserTransferAssetActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的订单 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserMyOrdersActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人信息 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserPersonalInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 实名认证 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserRealNameCertificateActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 初级认证 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserJuniorIdentifyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 中级认证 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserMediumIdentifyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 邀请返佣 -->
+        <activity android:name="com.foxexchange.user.activity.UserInviteReturnCommissionActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 返佣详情 -->
+        <activity android:name="com.foxexchange.user.activity.UserReturnCommissionRulesActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 返佣详情 -->
+        <activity android:name="com.foxexchange.user.activity.UserReturnCommissionDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 安全中心 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserSecurityCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 操作记录 -->
+        <activity android:name="com.foxexchange.user.activity.UserOperationRecordActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 绑定手机 -->
+        <activity android:name="com.foxexchange.user.activity.UserBindPhoneActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 绑定邮箱 -->
+        <activity android:name="com.foxexchange.user.activity.UserBindEMailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 修改登录密码 -->
+        <activity android:name="com.foxexchange.user.activity.UserModifyLoginPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 绑定谷歌身份验证器 -->
+        <activity android:name="com.foxexchange.user.activity.UserBindGoogleValidatorActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 谷歌验证码 -->
+        <activity android:name="com.foxexchange.user.activity.UserGoogleVerificationCodeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 修改资金密码 -->
+        <activity android:name="com.foxexchange.user.activity.UserModifyCapitalPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 提币地址 -->
+        <activity android:name="com.foxexchange.user.activity.UserWithDrawCoinsAddressActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 提币地址详情 -->
+        <activity android:name="com.foxexchange.user.activity.UserWithDrawCoinsAddressDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 添加地址 -->
+        <activity android:name="com.foxexchange.user.activity.UserAddAddressActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.foxexchange.user.activity.UserAboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!--设置-->
+        <activity android:name="com.foxexchange.user.activity.UserSettingActivity"
+            android:screenOrientation="portrait" />
+        <!--联系我们-->
+        <activity android:name="com.foxexchange.user.activity.UserConnectUsActivity"
+            android:screenOrientation="portrait" />
+        <!--设置-->
+        <activity android:name="com.foxexchange.user.activity.ContactUsActivity" />
+        <!--消息中心-->
+        <activity android:name="com.foxexchange.user.activity.UserMessageCenterActivity" />
+        <!--系统通知-->
+        <activity android:name="com.foxexchange.user.activity.UserNotificationActivity" />
+        <!--问题列表-->
+        <activity android:name="com.foxexchange.user.activity.UserProblemListActivity" />
+        <!--反馈详情-->
+        <activity android:name="com.foxexchange.user.activity.UserFeedbackDetailActivity" />
+        <!--新手引导-->
+        <activity android:name="com.foxexchange.user.activity.UserNoviceGuideActivity" />
+        <!--问题反馈-->
+        <activity android:name="com.foxexchange.user.activity.UserFeedBackActivity" />
+
+
+    </application>
+
+</manifest>

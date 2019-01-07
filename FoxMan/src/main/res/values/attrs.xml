@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--自定义圆角背景-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="lineColor" format="color" />
+    <attr name="lineWidth" format="dimension" />
+    <attr name="img_type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <!--<declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="img_type" />
+        <attr name="lineColor" />
+        <attr name="lineWidth" />
+    </declare-styleable>-->
+
+    <declare-styleable name="AbsRoundImageView">
+        <attr name="riv_borderWidth" format="dimension|reference"/>
+        <attr name="riv_borderColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="riv_radius" format="dimension|reference"/>
+        <attr name="riv_leftTopRadius" format="dimension|reference"/>
+        <attr name="riv_rightTopRadius" format="dimension|reference"/>
+        <attr name="riv_rightBottomRadius" format="dimension|reference"/>
+        <attr name="riv_leftBottomRadius" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlideDetailsLayout">
+        <attr name="percent" format="float" />
+        <attr name="duration" format="integer" />
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0" />
+            <enum name="behind" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--金额 样式  元大 角分小 $25.33-->
+    <declare-styleable name="MoneyView">
+        <!--金额-->
+        <attr name="money_text" format="string"/>
+        <!--金额颜色-->
+        <attr name="money_color" format="color"/>
+        <!--元大小-->
+        <attr name="yuan_size" format="dimension"/>
+        <!--分大小-->
+        <attr name="cent_size" format="dimension"/>
+        <!--前缀文本-->
+        <attr name="prefix_text" format="string"/>
+        <!--前缀大小-->
+        <attr name="prefix_size" format="dimension"/>
+        <!--前缀颜色-->
+        <attr name="prefix_color" format="color"/>
+        <!--前缀右边距-->
+        <attr name="prefix_padding" format="dimension"/>
+        <!--小数点左边距-->
+        <attr name="point_padding_left" format="dimension"/>
+        <!--小数点右边距-->
+        <attr name="point_padding_right" format="dimension"/>
+        <!--是否使用千分符-->
+        <attr name="grouping" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+        <attr name="isShowMillisecondInSecond" format="boolean" />
+        <attr name="isConvertDaysToHours" format="boolean" />
+        <attr name="isHideSuffixSecond" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+
+        <attr name="isShowTimeBgBorder" format="boolean" />
+        <attr name="timeBgBorderColor" format="color" />
+        <attr name="timeBgBorderSize" format="dimension" />
+        <attr name="timeBgBorderRadius" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- 日期选择控件 -->
+    <declare-styleable name="wheelview">
+        <attr name="wheelview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColorOut" format="color" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="dividerColor" format="color" />
+    </declare-styleable>
+
+
+
+<!--弹出等待对话框-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <!--带小三角的导航指示器-->
+    <attr name="visible_tab_num" format="integer" />
+    <declare-styleable name="ViewPagerTriangleIndicator">
+        <attr name="visible_tab_num" />
+    </declare-styleable>
+
+    <!--售后进度-->
+    <declare-styleable name="stateprogress">
+        <!--实心大圆颜色-->
+        <attr name="bigcirclepaintColor" format="color|reference" />
+        <!--空心大圆颜色-->
+        <attr name="bigcirclepaint_stroke_Color" format="color|reference" />
+        <!--小圆圆颜色-->
+        <attr name="smallcirclepaint_Color" format="color|reference" />
+        <!--2圆之间的距离-->
+        <attr name="dx" format="dimension|reference" />
+        <!--大圆半径-->
+        <attr name="bigradius" format="dimension|reference" />
+        <!--小圆半径-->
+        <attr name="smallradius" format="dimension|reference" />
+        <!--view的开始x坐标-->
+        <attr name="startx" format="dimension|reference" />
+        <!--view的开始y坐标-->
+        <attr name="starty" format="dimension|reference" />
+        <!--文字到圆的y距离-->
+        <attr name="txttocircle" format="dimension|reference" />
+        <!--字体大小-->
+        <attr name="textsize" format="dimension|reference" />
+        <!--字体默认颜色-->
+        <attr name="textcolor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="selet_hint">
+        <attr name="attr_hint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="NavigateTabBar">
+        <attr name="navigateTabTextColor" format="color|reference"/>
+        <attr name="navigateTabSelectedTextColor" format="color|reference"/>
+        <attr name="containerId" format="integer|reference"/>
+        <attr name="navigateTabTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSpinner" >
+        <attr name="ms_arrow_tint" format="color"/>
+        <attr name="ms_hide_arrow" format="boolean"/>
+        <attr name="ms_background_color" format="color"/>
+        <attr name="ms_text_color" format="color"/>
+        <attr name="ms_text_gravity" format="integer"/>
+        <attr name="ms_dropdown_max_height" format="dimension"/>
+        <attr name="ms_dropdown_height" format="dimension">
+            <enum name="fill_parent" value="-1"/>
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr>
+        <attr name="ms_background_selector" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordView">
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordPadding" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="cursorFlashTime" format="integer" />
+        <attr name="isCursorEnable" format="boolean" />
+        <attr name="cipherEnable" format="boolean" />
+        <attr name="cursorColor" format="color" />
+        <attr name="mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_progress" format="integer" />
+        <attr name="donut_max" format="integer" />
+
+        <attr name="donut_unfinished_color" format="color" />
+        <attr name="donut_finished_color" format="color" />
+
+        <attr name="donut_finished_stroke_width" format="dimension" />
+        <attr name="donut_unfinished_stroke_width" format="dimension" />
+
+        <attr name="donut_text_size" format="dimension" />
+        <attr name="donut_text_color" format="color" />
+
+        <attr name="donut_prefix_text" format="string" />
+        <attr name="donut_suffix_text" format="string" />
+        <attr name="donut_text" format="string" />
+
+        <attr name="donut_background_color" format="color" />
+
+        <attr name="donut_inner_bottom_text" format="string" />
+        <attr name="donut_inner_bottom_text_size" format="dimension" />
+        <attr name="donut_inner_bottom_text_color" format="color" />
+
+        <attr name="donut_circle_starting_degree" format="integer" />
+        <attr name="donut_show_text" format="boolean" />
+        <attr name="donut_inner_drawable" format="reference" />
+    </declare-styleable>
+</resources>

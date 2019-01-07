@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_a7adbc">#A7ADBC</color>
+    <color name="color_006400">#006400</color>
+    <color name="color_cd2626">#CD2626</color>
+
+    <color name="ma5">#823E66</color>
+    <color name="ma10">#B99C7A</color>
+    <color name="ma20">#3C7193</color>
+    <color name="ma30">#7F9976</color>
+
+
+</resources>

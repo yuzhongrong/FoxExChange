@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_181B2C">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:gravity="center"
+        android:text="@string/str_market_title"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/dp18" />
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:paddingBottom="@dimen/dp9"
+        tl:tl_indicator_color="@color/color_2C97DE"
+        tl:tl_indicator_width="@dimen/dp51"
+        tl:tl_indicator_height="@dimen/dp2"
+        tl:tl_textSelectColor="@color/color_0994FE"
+        tl:tl_textUnselectColor="@color/color_586396"
+        tl:tl_underline_color="@color/color_3B4266"
+        tl:tl_tab_space_equal="true"
+        tl:tl_underline_height="@dimen/dp1"/>
+    <com.foxexchange.market.views.MarketItemSelectLayout
+        android:id="@+id/market_layout_sort"
+        android:layout_height="@dimen/dp39"
+        android:layout_width="match_parent" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

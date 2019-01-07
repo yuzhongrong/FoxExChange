@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+    <!--图片轮播黑色指示器-->
+
+    <solid android:color="@color/color_e1e1e1" />
+
+    <size android:height="@dimen/dp8" android:width="@dimen/dp8"/>
+
+</shape>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp12"
+            android:text="被邀请人账户 UID"
+            android:textColor="@color/color_6470A9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp12"
+            android:text="时间"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_6470A9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp12"
+            android:text="状态"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_6470A9"/>
+    </RelativeLayout>
+
+    <com.lqr.recyclerview.LQRRecyclerView
+        android:id="@+id/lqr_invite_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

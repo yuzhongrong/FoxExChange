@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- 填充颜色 -->
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/color_ff32395e" />
+        <corners android:topLeftRadius="@dimen/dp4"
+            android:topRightRadius="@dimen/dp4"
+            android:bottomLeftRadius="@dimen/dp4"
+            android:bottomRightRadius="@dimen/dp4" />
+    </shape>

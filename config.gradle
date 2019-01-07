@@ -1,0 +1,121 @@
+ext {
+
+    android = [
+            minSdkVersion    : 18,
+            targetSdkVersion : 26,
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            versionName      : "1.0.0",
+            versionCode      : 1
+    ]
+    dependencies = [
+            appcompatV7                  : 'com.android.support:appcompat-v7:26.0.1',
+            cardviewV7                   : 'com.android.support:cardview-v7:26.0.1',
+            design                       : 'com.android.support:design:26.0.1',
+            supportV4                    : 'com.android.support:support-v4:26.0.1',
+            multidex                     : 'com.android.support:multidex:1.0.3',
+            constraintLayout             : 'com.android.support.constraint:constraint-layout:1.1.2',
+            fragmentation                : 'me.yokeyword:fragmentation-core:1.1.8',     //https://github.com/iwgang/FamiliarRecyclerView
+            FlycoTabLayout_Lib           : 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar',       //https://github.com/hezhipengzipp/FlycoRoundView
+            FlycoRoundView_Lib           : 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar',
+            BaseRecyclerViewAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40', //adapter  库
+
+            nineoldandroids              : 'com.nineoldandroids:library:2.4.0',
+
+            pinnedsectionitemdecoration  : 'com.oushangfeng:PinnedSectionItemDecoration:1.2.4',
+            recovery                     : 'com.zxy.android:recovery:0.1.4',//Android Crash 自动恢复
+
+            androideventbus              : 'org.greenrobot:eventbus:3.1.1',
+            //item 侧滑
+            SwipeDelMenuLayout           : 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5',
+
+            okio                         : 'com.squareup.okio:okio:1.14.1',
+            okhttp3                      : 'com.squareup.okhttp3:okhttp:3.10.0',
+            logging_interceptor          : 'com.squareup.okhttp3:logging-interceptor:3.10.0',
+
+            rxjava                       : 'io.reactivex.rxjava2:rxjava:2.1.14',
+            rxandroid                    : 'io.reactivex.rxjava2:rxandroid:2.0.2',
+            rxbind2                      : 'com.jakewharton.rxbinding2:rxbinding:2.1.1',
+            rxbind2_v4                   : 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.1.1',
+            rxbind2_v7                   : 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.1.1',
+            retrofit                     : 'com.squareup.retrofit2:retrofit:2.4.0',
+            adapter_rxjava               : 'com.squareup.retrofit2:adapter-rxjava2:2.4.0',
+            converter_gson               : 'com.squareup.retrofit2:converter-gson:2.4.0',
+            converter_str                : 'com.squareup.retrofit2:converter-scalars:2.4.0',
+
+            rxpermissions                : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
+
+            rxlifecycle                  : 'com.trello.rxlifecycle2:rxlifecycle:2.2.1',
+            rxlifecycle_components       : 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1',
+            rxlifecycle_com_perfer       : 'com.trello.rxlifecycle2:rxlifecycle-components-preference:2.2.1',
+
+            orhanobut_logger             : 'com.orhanobut:logger:2.1.1',
+            crashreport                  : 'com.tencent.bugly:crashreport:2.6.6.1',
+            //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+            nativecrashreport            : 'com.tencent.bugly:nativecrashreport:3.3.1',
+            //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+            swipebacklayout              : 'me.imid.swipebacklayout.lib:library:1.0.0',
+
+            // json解析
+            fastjson                     : 'com.alibaba:fastjson:1.1.68.android',
+            gson                         : 'com.google.code.gson:gson:2.8.5',
+
+            // with img
+            ninegridview                 : 'com.lzy.widget:ninegridview:0.2.0',
+            matisse                      : 'com.zhihu.android:matisse:0.4.3',//知乎开源图片选择器
+            glide                        : 'com.github.bumptech.glide:glide:4.7.1',
+            glide_processor              : 'com.github.bumptech.glide:compiler:4.7.1',
+            glide_transformations        : 'jp.wasabeef:glide-transformations:3.3.0',//glide图片转换器
+            banner                       : 'com.youth.banner:banner:1.4.10',//轮播图
+
+            smart_refresh_layout         : 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-5',
+            smartrefreshheader           : 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-5',
+            //倒计时
+            countdownview                : 'com.github.iwgang:countdownview:2.1.6',
+            flowlayout                   : 'com.zhy:flowlayout-lib:1.0.3',
+            time_line_view               : 'com.github.vipulasri:timelineview:1.0.5',
+            //XTablayout
+            xtablayout                   : 'com.androidkun:XTabLayout:1.1.3',
+
+            blockcanary                  : 'com.github.markzhai:blockcanary-android:1.5.0',
+
+            versitonCheck                : 'com.allenliu.versionchecklib:library:1.7.0',
+            basePopup                    : 'com.github.razerdp:BasePopup:1.9.3',
+            arouterApi                   : 'com.alibaba:arouter-api:1.4.1',
+            tinypinyin                   : 'com.github.promeg:tinypinyin:1.0.0',
+            AndroidPickerView            : 'com.contrarywind:Android-PickerView:3.2.7',
+            utilcode                     : 'com.blankj:utilcode:1.9.12',
+
+            zxingCore                    : 'com.google.zxing:core:3.2.1',
+            richtext                     : 'com.zzhoujay.richtext:richtext:3.0.5',
+            aviLibrary                   : 'com.wang.avi:library:2.1.3',
+            circleImageView              : 'de.hdodenhof:circleimageview:2.2.0',
+            pullLoadMoreRecyclerView     : 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2',
+            switchButton                 : 'com.github.zcweng:switch-button:0.0.3@aar',
+            recyclerViewSwipe            : 'com.yanzhenjie:recyclerview-swipe:1.1.4',
+
+            gifDrawable                  : 'pl.droidsonroids.gif:android-gif-drawable:1.2.1',
+            butterKnife                  : 'com.jakewharton:butterknife:8.5.1',
+            floatingActionButton         : 'com.melnykov:floatingactionbutton:1.3.0',
+            flycoTabLayout               : 'skin.support:flycotablayout:2.1.2',
+            meterialRipple               : 'com.balysv:material-ripple:1.0.2',
+
+            simpleAndroidEventBus        : 'org.simple:androideventbus:1.0.5.1',
+            bubbleSeekBar                : 'com.xw.repo:bubbleseekbar:3.14',
+            kotlinStdlibJre7             : 'org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.30',
+            bgaBanner                    : 'cn.bingoogolapple:bga-banner:2.2.4@aar',
+            MPAndroidChart               : 'com.github.PhilJay:MPAndroidChart:v3.0.3',
+            netmonitor                    : 'com.caption:netmonitorlibrary:1.0.0',
+            magicIndicator               : 'com.github.hackware1993:MagicIndicator:1.5.0',
+            luban                        : 'top.zibin:Luban:1.1.3',
+            roundedImageView             : 'com.makeramen:roundedimageview:2.3.0',
+            badgeview                    : 'q.rorbin:badgeview:1.1.3',
+            niceimageview                :'com.github.Othershe:NiceImageView:1.0.0',
+            fab                           : 'com.github.clans:fab:1.6.4',
+
+    ]
+}
+
+
+
+

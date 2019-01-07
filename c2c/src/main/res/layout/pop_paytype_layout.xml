@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+
+
+    >
+
+<LinearLayout
+    android:id="@+id/pop_paytype_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_ffffffff_bg"
+    android:paddingLeft="@dimen/dp5"
+    android:paddingRight="@dimen/dp5"
+    android:layout_alignParentBottom="true"
+
+   >
+
+    <TextView
+        android:id="@+id/c2c_paytype0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="银行卡9669"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_32395E"
+        android:gravity="center"
+        android:background="@color/white"
+        />
+
+    <View
+       style="@style/line_f8f8f8" />
+
+    <TextView
+        android:id="@+id/c2c_paytype1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="支付宝(.com)"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_32395E"
+        android:gravity="center"
+        android:background="@color/white"
+        />
+
+    <View
+        style="@style/line_f8f8f8" />
+    <TextView
+        android:id="@+id/c2c_paytype2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="微信(en87)"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_32395E"
+        android:gravity="center"
+        android:background="@color/white"
+        />
+    <View
+        style="@style/line_f8f8f8" />
+
+    <TextView
+        android:id="@+id/c2c_paytype3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="UP支付(en87)"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_32395E"
+        android:gravity="center"
+        android:background="@color/white"
+        />
+
+
+
+    <TextView
+        android:id="@+id/c2c_paytype_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="取消"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_32395E"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/white"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

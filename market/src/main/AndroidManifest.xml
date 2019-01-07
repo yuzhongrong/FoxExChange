@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bitchat.android.com.market">
+
+    <application>
+        <activity android:name="com.foxexchange.market.activity.AddOptionalActivity"></activity>
+    </application>
+
+</manifest>

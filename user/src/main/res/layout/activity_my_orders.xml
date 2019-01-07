@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_181B2C"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/color_181B2C">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/dp10"
+            android:layout_height="@dimen/dp20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:src="@mipmap/back" />
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/my_orders_segment_tab"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:tl_textSelectColor="@color/color_FFFFFF"
+            app:tl_textUnselectColor="@color/color_6470A9"
+            app:tl_bar_color="@color/color_181B2C"
+            app:tl_indicator_corner_radius="@dimen/dp5"
+            app:tl_bar_stroke_color="@color/color_6470A9"
+            app:tl_indicator_color="@color/color_6470A9"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.cjwsc.idcm.widget.keyboard.CustomKeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:shadowRadius="0"
+        android:shadowColor="@color/color_b9b9b9"
+        android:focusableInTouchMode="true"
+        android:background="@color/color_b9b9b9"
+        android:keyBackground="@drawable/bg_custom_key_gray"
+        android:keyTextColor="@color/color_111111"
+        android:labelTextSize="@dimen/sp14"
+        android:keyTextSize="@dimen/sp27" />
+
+    <EditText
+
+        android:id="@+id/et_focus_scavenger"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</FrameLayout>

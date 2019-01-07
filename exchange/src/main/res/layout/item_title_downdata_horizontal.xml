@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp152"
+    android:layout_centerVertical="true"
+    android:minHeight="@dimen/dp8"
+    android:layout_height="wrap_content">
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:layout_marginLeft="@dimen/dp15"
+        android:id="@+id/exchange_pankou_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:textColor="@color/color_6470a9"
+        android:text="@string/str_exchange_headprice"
+
+        />
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:textColor="@color/color_6470a9"
+        android:text="@string/str_exchange_count"
+        />
+    <!--android:textColor="@color/color_6470a9"-->
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:textColor="@color/color_6470a9"
+        android:text="@string/str_exchange_sale"
+        />
+</RelativeLayout>

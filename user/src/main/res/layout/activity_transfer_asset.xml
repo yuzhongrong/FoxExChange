@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_181B2C"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_transfer_asset"
+                android:textSize="@dimen/dp24"
+                android:textColor="@color/color_00A4F1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:textSize="@dimen/dp12"
+                android:textColor="@color/color_C3CDFF"
+                android:layout_marginBottom="@dimen/dp10"
+                android:text="@string/str_do_not_need_feed"/>
+
+            <View style="@style/gray_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:textSize="@dimen/dp13"
+                android:textColor="@color/color_C3CDFF"
+                android:text="@string/str_type_of_coins"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@mipmap/bg_et_input2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@color/color_00000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="@string/str_please_select_type_of_coin"
+                    android:textColor="@color/color_6C749D"
+                    android:textSize="@dimen/dp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/icon_arrow_gray_down" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:textSize="@dimen/dp13"
+                android:textColor="@color/color_C3CDFF"
+                android:text="@string/str_from"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@mipmap/bg_et_input2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="@string/str_fb_transaction_account"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/dp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/icon_arrow_gray_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center_vertical|right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_C3CDFF"
+                    android:text="@string/str_fb_transaction_account_balance"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_FF5755"
+                    android:text="------"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_C3CDFF"
+                    android:text="UP）"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:textSize="@dimen/dp13"
+                android:textColor="@color/color_C3CDFF"
+                android:text="@string/str_transfer_to"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@mipmap/bg_et_input2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="@string/str_bb_transaction_account"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/dp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/icon_arrow_gray_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_C3CDFF"
+                    android:text="@string/str_bb_transaction_account_balance"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_FF5755"
+                    android:text="------"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_C3CDFF"
+                    android:text="UP）"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/str_type_of_coin"
+                android:textColor="@color/color_C3CDFF"
+                android:textSize="@dimen/dp13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@mipmap/bg_et_input2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_00000000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:hint="@string/str_please_input_the_num_of_how_many_you_want_to_transfer"
+                    android:textColorHint="@color/color_6C749D"
+                    android:textColor="@color/color_6C749D"
+                    android:textSize="@dimen/dp15" />
+
+                <View
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:background="@color/color_4A558E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="@string/str_sell_all"
+                    android:textColor="@color/color_0994FE" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_C3CDFF"
+                    android:text="@string/str_bb_transaction_account_balance"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_FF5755"
+                    android:text="------"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp13"
+                    android:textColor="@color/color_C3CDFF"
+                    android:text="UP）"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_marginBottom="@dimen/dp40"
+                android:background="@mipmap/bg_blue_btn"
+                android:gravity="center"
+                android:text="@string/str_transfer_immediately"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/dp18" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

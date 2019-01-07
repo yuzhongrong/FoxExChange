@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+   >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        >
+
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/segmenttablayout"
+            android:layout_width="@dimen/dp130"
+            android:layout_height="@dimen/dp35"
+            app:tl_bar_stroke_color="@color/color_6470A9"
+            app:tl_textSelectColor="@color/color_ffffff"
+            app:tl_textUnselectColor="@color/color_6470A9"
+            app:tl_divider_color="@color/color_1E2238"
+            app:tl_bar_color="@android:color/transparent"
+            app:tl_bar_stroke_width="@dimen/dp0.5"
+            app:tl_divider_width="@dimen/dp0.5"
+            app:tl_indicator_color="@color/color_6470A9"
+            app:tl_indicator_corner_radius="@dimen/dp5"
+            android:layout_centerInParent="true"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/icon_list"
+            android:layout_width="@dimen/dp17"
+            android:layout_height="@dimen/dp15"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_list"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp15"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        />
+
+</RelativeLayout>

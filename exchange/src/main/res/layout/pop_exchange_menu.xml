@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/icon_menu_pop"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp39"
+        android:id="@+id/exchange_order_centerpop"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp16"
+            android:scaleType="center"
+            android:src="@mipmap/icon_menu_order"
+            android:layout_centerVertical="true"
+            android:id="@+id/exchange_popmenu_ordercenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_centerVertical="true"
+            android:text="@string/str_coincharging"
+            android:layout_toRightOf="@+id/exchange_popmenu_ordercenter"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp39"
+        android:id="@+id/exchange_order_coincharging"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp16"
+            android:scaleType="center"
+            android:src="@mipmap/icon_coin_charging"
+            android:layout_centerVertical="true"
+            android:id="@+id/exchange_popmenu_coincharging"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_centerVertical="true"
+            android:text="@string/str_order_center"
+            android:layout_toRightOf="@+id/exchange_popmenu_coincharging"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp39"
+        android:id="@+id/exchange_order_addoptional"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp16"
+            android:scaleType="center"
+            android:src="@mipmap/icon_add_optional"
+            android:layout_centerVertical="true"
+            android:id="@+id/exchange_popmenu_addoptional"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_centerVertical="true"
+            android:text="@string/str_addoptional"
+            android:layout_toRightOf="@+id/exchange_popmenu_addoptional"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp39"
+        android:id="@+id/exchange_order_handicapchange"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp16"
+            android:scaleType="center"
+            android:src="@mipmap/icon_handicap_change"
+            android:layout_centerVertical="true"
+            android:id="@+id/exchange_popmenu_handicapchange"/>
+
+        <TextView
+            android:id="@+id/exchange_tv_handicapchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_centerVertical="true"
+            android:text="@string/str_handicapchange"
+            android:layout_toRightOf="@+id/exchange_popmenu_handicapchange"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

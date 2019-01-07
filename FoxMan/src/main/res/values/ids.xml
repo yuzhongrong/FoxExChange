@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--PageManager错误页面重试按钮的id-->
+    <item type="id" name="pager_error_retry_btn" />
+    <!--PageManager错误页面错误信息-->
+    <item type="id" name="pager_error_msg" />
+
+    <!--TakePhotoUtils需要的id-->
+    <item type="id" name="photo_photograph" />
+    <item type="id" name="photo_albums" />
+    <item type="id" name="photo_cancel" />
+</resources>

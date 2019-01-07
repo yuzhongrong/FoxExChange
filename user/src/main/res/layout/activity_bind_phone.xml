@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_telephone_number"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"/>
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="***********"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/dp15"
+            android:textColor="@color/color_7E7E7E"/>
+
+    </RelativeLayout>
+
+    <View style="@style/marginLeftRightLine"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_msg_identify"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp15" />
+
+        <ToggleButton
+            android:id="@+id/msg_identify_tog"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp35"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textOff=""
+            android:checked="true"
+            android:textOn=""
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_toggle_btn"/>
+    </RelativeLayout>
+
+</LinearLayout>

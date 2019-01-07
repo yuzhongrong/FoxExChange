@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_push_group_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp30"
+    android:layout_marginLeft="@dimen/dp15"
+    android:layout_marginTop="@dimen/dp10"
+    android:background="@drawable/shape_round_whitesolide_radius15"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:paddingLeft="@dimen/dp10">
+
+    <ImageView
+        android:id="@+id/iv_push_user_portrait"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:src="@mipmap/icon_groupdetail_unknown_person" />
+
+    <TextView
+        android:id="@+id/tv_push_user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp8"
+        android:text="爱好尽快回"
+        android:textColor="@color/color_d5bfa3" />
+
+    <TextView
+        android:id="@+id/tv_push_group_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingRight="@dimen/dp10"
+        android:text="咖啡哈伦裤"
+        android:textColor="@color/color_333333" />
+</LinearLayout>

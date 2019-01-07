@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--图片轮播白色指示器-->
+    <solid android:color="@color/white" />
+    <size
+        android:width="@dimen/dp9"
+        android:height="@dimen/dp9" />
+
+</shape>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+
+    >
+
+<LinearLayout
+    android:id="@+id/pop_root"
+    android:layout_width="@dimen/dp135"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/icon_menu_pop"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="@dimen/dp15"
+    android:padding="@dimen/dp9"
+    android:layout_marginRight="@dimen/dp5"
+
+   >
+
+    <TextView
+        android:id="@+id/c2c_top_menu_item1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_c2c_asset_transform"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/icon_c2c_assets_transform"
+        android:paddingLeft="@dimen/dp15"
+
+
+        />
+
+    <View
+       style="@style/line_f8f8f8" />
+
+    <TextView
+        android:id="@+id/c2c_top_menu_item2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_c2c_ordercenter"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/icon_c2c_order_center"
+        android:paddingLeft="@dimen/dp15"
+
+        />
+
+    <View
+        style="@style/line_f8f8f8" />
+    <TextView
+        android:id="@+id/c2c_top_menu_item3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_c2c_collections_setting"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/icon_c2c_collections_setting"
+        android:paddingLeft="@dimen/dp15"
+        />
+    <View
+        style="@style/line_f8f8f8" />
+
+    <TextView
+        android:id="@+id/c2c_top_menu_item4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_modify_pwd"
+        android:textSize="@dimen/dp15"
+        android:textColor="@color/color_333333"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/icon_c2c_pwd"
+        android:paddingLeft="@dimen/dp15"
+        />
+
+
+</LinearLayout>
+
+</RelativeLayout>

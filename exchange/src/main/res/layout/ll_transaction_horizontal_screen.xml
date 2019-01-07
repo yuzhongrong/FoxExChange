@@ -1,0 +1,421 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:id="@+id/exchang_coinprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:text="@string/str_exchange_coinprice"
+            android:textColor="@color/color_ff5755"
+            android:textSize="@dimen/dp19" />
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/exchang_coinprice"
+            android:layout_toRightOf="@+id/exchang_coinprice"
+            android:text="≈2320.015 CNY"
+            android:textColor="@color/color_6470a9"
+            android:textSize="@dimen/dp13" />
+
+        <Button
+            android:id="@+id/exchange_btn_kline_horizontal"
+            android:layout_width="@dimen/dp67"
+            android:layout_height="@dimen/dp25"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp16"
+            android:background="@drawable/bg_exchange_cancel"
+            android:drawableLeft="@mipmap/icon_kline"
+            android:drawablePadding="@dimen/dp7"
+            android:paddingLeft="@dimen/dp7"
+            android:text="@string/exchange_kline_picture"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dp13" />
+
+        <LinearLayout
+            android:id="@+id/exchange_horizontal_recyclerveiw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exchange_btn_kline_horizontal"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:orientation="horizontal">
+
+            <com.lqr.recyclerview.LQRRecyclerView
+                android:id="@+id/exchange_horizontal_updata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:rv_divider_color="@color/color_181B2C"
+                app:rv_divider_size="@dimen/dp10" />
+
+            <com.lqr.recyclerview.LQRRecyclerView
+                android:id="@+id/exchange_horizontal_downdata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                app:rv_divider_color="@color/color_181B2C"
+                app:rv_divider_size="@dimen/dp10" />
+        </LinearLayout>
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/exchange_horizontal_tablayout"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp35"
+            android:layout_below="@+id/exchange_horizontal_recyclerveiw"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10"
+            app:tl_indicator_color="@color/color_0994fe"
+            app:tl_indicator_corner_radius="@dimen/dp5"
+            app:tl_indicator_height="@dimen/dp2"
+            app:tl_indicator_width="@dimen/dp29"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/color_c3cdff"
+            app:tl_textUnselectColor="@color/color_6470a9"
+            app:tl_textsize="@dimen/dp15" />
+
+        <View
+            android:id="@+id/exchanage_deliver_view"
+            android:layout_below="@+id/exchange_horizontal_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/color_343b60" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exchange_horizontal_tablayout"
+            android:layout_marginTop="@dimen/dp19"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_buy"
+                    android:textColor="@color/color_6470a9"
+                    android:textSize="@dimen/dp14" />
+
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/exchange_tv_priceoff"
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/dp13"
+                    android:clickable="false"
+                    android:background="@drawable/bg_et_limitprice"
+                    android:textColor="@color/color_6470a9"
+                    android:text="@string/str_offprice"
+                    android:textSize="@dimen/dp15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41" />
+
+                <com.foxexchange.exchange.widget.UpdownPriceLayout
+                    android:id="@+id/exchange_limitedprice_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41"
+                    android:layout_marginTop="@dimen/dp13" />
+
+                <TextView
+                    android:id="@+id/exchange_pretrade_horizontalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_marginTop="@dimen/dp7"
+                    android:text="≈2320.015 CNY"
+                    android:textColor="@color/color_6470A9"
+                    android:textSize="@dimen/dp10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41"
+                    android:layout_marginTop="@dimen/dp17"
+                    android:background="@drawable/bg_et_limitprice">
+
+                    <EditText
+                        android:digits="1234567890."
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true"
+                        android:id="@+id/exchange_buy_count"
+                        android:layout_width="@dimen/dp110"
+                        android:layout_height="@dimen/dp41"
+                        android:background="@null"
+                        android:hint="输入数量"
+                        android:paddingLeft="@dimen/dp13"
+                        android:textColor="@color/color_c3cdff"
+                        android:textColorHint="@color/color_3f4660"
+                        android:textSize="@dimen/dp15" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp41"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp14"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="GSG"
+                        android:textColor="@color/color_C3CDFF" />
+                </RelativeLayout>
+
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/excchange_remain_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:text="可用21543.013466 UP"
+                    android:textColor="@color/color_6470a9"
+                    android:textSize="@dimen/dp12" />
+                <SeekBar
+                    android:paddingStart="@dimen/dp0"
+                    android:paddingEnd="@dimen/dp0"
+                    android:layout_marginTop="@dimen/dp22"
+                    android:maxHeight="@dimen/dp3"
+                    android:minHeight="@dimen/dp3"
+                    android:thumbOffset="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@layout/seekbar_bg_green"
+                    android:thumb="@mipmap/icon_seek_btn"
+                    />
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp10"
+                        android:textColor="@color/color_6470a9"
+                        android:text="@string/str_0"
+                        />
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp10"
+                        android:textColor="@color/color_6470a9"
+                        android:text="@string/str_50percent"
+                        />
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp10"
+                        android:textColor="@color/color_6470a9"
+                        android:text="@string/str_100percent"
+                        />
+                </RelativeLayout>
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:layout_marginTop="@dimen/dp28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易额 98721.0154 UP"
+                    android:textSize="@dimen/dp14"
+                    android:id="@+id/exchange_trade_coinprice"
+                    android:textColor="@color/color_c1cbfd"
+                    />
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/tv_exchange_tradermb"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="≈2320.015 CNY"
+                    android:textSize="@dimen/dp11"
+                    android:textColor="@color/color_6470a9"
+                    />
+                <Button
+                    android:layout_marginTop="@dimen/dp22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41"
+                    android:text="@string/str_buy_in"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/dp16"
+                    android:background="@drawable/bg_exchange_buyin"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exchange_sale"
+                    android:textColor="@color/color_6470a9"
+                    android:textSize="@dimen/dp14" />
+
+                <com.foxexchange.exchange.widget.UpdownPriceLayout
+                    android:id="@+id/exchange_limitedpriceh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41"
+                    android:layout_marginTop="@dimen/dp13" />
+
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/exchange_tv_priceoffh"
+                    android:editable="false"
+                    android:layout_marginTop="@dimen/dp13"
+                    android:clickable="false"
+                    android:background="@drawable/bg_et_limitprice"
+                    android:textColor="@color/color_6470a9"
+                    android:text="@string/str_offprice"
+                    android:textSize="@dimen/dp15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41" />
+
+                <TextView
+                    android:id="@+id/exchange_pretradeh_horizontalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_marginTop="@dimen/dp7"
+                    android:text="≈2320.015 CNY"
+                    android:textColor="@color/color_6470A9"
+                    android:textSize="@dimen/dp10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41"
+                    android:layout_marginTop="@dimen/dp17"
+                    android:background="@drawable/bg_et_limitprice">
+
+                    <EditText
+                        android:digits="1234567890."
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true"
+                        android:id="@+id/exchange_buyh_count"
+                        android:layout_width="@dimen/dp110"
+                        android:layout_height="@dimen/dp41"
+                        android:background="@null"
+                        android:hint="输入数量"
+                        android:paddingLeft="@dimen/dp13"
+                        android:textColor="@color/color_c3cdff"
+                        android:textColorHint="@color/color_3f4660"
+                        android:textSize="@dimen/dp15" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp41"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp14"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="GSG"
+                        android:textColor="@color/color_C3CDFF" />
+                </RelativeLayout>
+
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/excchange_remainh_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_marginTop="@dimen/dp11"
+                    android:text="可用21543.013466 UP"
+                    android:textColor="@color/color_6470a9"
+                    android:textSize="@dimen/dp12" />
+                <SeekBar
+                    android:paddingStart="@dimen/dp0"
+                    android:paddingEnd="@dimen/dp0"
+                    android:layout_marginTop="@dimen/dp22"
+                    android:maxHeight="@dimen/dp3"
+                    android:minHeight="@dimen/dp3"
+                    android:thumbOffset="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@layout/seekbar_bg_red"
+                    android:thumb="@mipmap/icon_redseek_btn"
+                    />
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp10"
+                        android:textColor="@color/color_6470a9"
+                        android:text="@string/str_0"
+                        />
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp10"
+                        android:textColor="@color/color_6470a9"
+                        android:text="@string/str_50percent"
+                        />
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp10"
+                        android:textColor="@color/color_6470a9"
+                        android:text="@string/str_100percent"
+                        />
+                </RelativeLayout>
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:layout_marginTop="@dimen/dp28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易额 98721.0154 UP"
+                    android:textSize="@dimen/dp14"
+                    android:id="@+id/exchange_tradeh_coinprice"
+                    android:textColor="@color/color_c1cbfd"
+                    />
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/tv_exchangeh_tradermb"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="≈2320.015 CNY"
+                    android:textSize="@dimen/dp11"
+                    android:textColor="@color/color_6470a9"
+                    />
+                <Button
+                    android:layout_marginTop="@dimen/dp22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp41"
+                    android:text="@string/str_buy_saleout"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/dp16"
+                    android:background="@drawable/bg_exchange_saleout"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    <!--分割线-->
+    <View android:layout_width="match_parent"
+        android:id="@+id/exchange_diliver_view"
+        android:layout_marginTop="@dimen/dp21"
+        android:layout_below="@+id/exchange_ll_salelayout"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/color_000000"
+        />
+</LinearLayout>

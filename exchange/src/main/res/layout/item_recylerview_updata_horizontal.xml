@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp152"
+    android:layout_centerVertical="true"
+    android:minHeight="@dimen/dp8"
+    android:layout_height="wrap_content">
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:id="@+id/exchange_pankou_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:textColor="@color/color_c3cdff"
+        android:text="6"
+        />
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:textColor="@color/color_6470a9"
+        android:text="412.0348"
+        />
+    <!--android:textColor="@color/color_6470a9"-->
+    <com.foxexchange.common.widgets.CustomerTextView
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp10"
+        android:textColor="@color/color_1dd189"
+        android:text="3210.134"
+        />
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_FFFFFF"
+            android:orientation="vertical"
+            android:padding="@dimen/dp15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/str_type_of_coins"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_add_address_f3f3f3_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_please_select_type_of_coin"
+                    android:textSize="@dimen/dp15"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_A5A5A5"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrow_black_down"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/str_type_of_coins"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_add_address_f3f3f3_bg">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_00000000"
+                    android:hint="@string/str_user_please_input_or_paste_address"
+                    android:textSize="@dimen/dp15"
+                    android:layout_centerVertical="true"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:textColor="@color/color_A5A5A5"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_user_scan"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/str_type_of_coins"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp135"
+                android:padding="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_add_address_f3f3f3_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_00000000"
+                    android:maxLength="100"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:gravity="left|top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/100"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/dp15"
+                    android:textColor="@color/color_A5A5A5"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/str_user_phone_number"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:padding="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_add_address_f3f3f3_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_00000000"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_user_msg_identification_code"
+                android:layout_marginTop="@dimen/dp15"
+                android:textSize="@dimen/dp13"
+                android:textColor="@color/color_5E6683"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_add_address_f3f3f3_bg">
+
+                <EditText
+                    android:id="@+id/et_capital_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/str_please_input_identification_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                    android:textColorHint="@color/color_A5A5A5"
+                    android:textColor="@color/color_000000"
+                    android:background="@color/color_00000000"
+                    android:paddingLeft="@dimen/dp10"/>
+
+                <View android:layout_width="@dimen/dp1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@color/color_cccccc"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:text="@string/str_get_identify_code"
+                        android:textColor="@color/color_0994FE"
+                        android:textSize="@dimen/dp14"/>
+
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:timeTextColor="@color/color_0994FE"
+                        app:suffixTextColor="@color/color_0994FE"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:gravity="center"
+                android:text="@string/str_user_confirm"
+                android:textSize="@dimen/dp18"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_marginBottom="@dimen/dp50"
+                android:textColor="@color/color_FFFFFF"
+                android:background="@mipmap/bg_blue_btn"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

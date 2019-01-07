@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/color_181B2C">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/dp10"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/back"/>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_title"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/dp18"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_operation_record"
+            android:textColor="@color/color_7582C5"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bind_phone_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_mobile_phone"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已绑定"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_0994FE"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow"/>
+    </RelativeLayout>
+    <View style="@style/marginLeftRightLine"/>
+
+    <RelativeLayout
+        android:id="@+id/bind_email_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_e_mail"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未绑定"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_7E7E7E"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow"/>
+    </RelativeLayout>
+    <View style="@style/marginLeftRightLine"/>
+
+    <RelativeLayout
+        android:id="@+id/google_check_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_google_check"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已绑定"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_7E7E7E"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow"/>
+    </RelativeLayout>
+    <View style="@style/marginLeftRightLine"/>
+
+    <RelativeLayout
+        android:id="@+id/login_pwd_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/str_login_password"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已绑定"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_7E7E7E"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow"/>
+    </RelativeLayout>
+    <View style="@style/marginLeftRightLine"/>
+
+    <RelativeLayout
+        android:id="@+id/asset_pwd_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_capital_password"
+            android:textSize="@dimen/dp15"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已绑定"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:textSize="@dimen/dp15"
+            android:textColor="@color/color_7E7E7E"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_arrow"/>
+    </RelativeLayout>
+    <View style="@style/marginLeftRightLine"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dp15"
+        android:paddingLeft="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_fingerprint_password"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp15" />
+
+        <ToggleButton
+            android:id="@+id/fingerprint_tog"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp35"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textOff=""
+            android:checked="false"
+            android:textOn=""
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_toggle_btn"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

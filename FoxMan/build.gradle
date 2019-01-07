@@ -1,0 +1,176 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+def config = rootProject.ext.android //配置
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        javaCompileOptions {
+            annotationProcessorOptions {
+            //    arguments = [ moduleName : project.getName() ]
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+
+            }
+        }
+    }
+
+    sourceSets{
+
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs=['src/main/libs']
+        }
+
+    }
+    repositories { flatDir { dirs 'libs' } }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = 'UTF-8'
+    }
+
+
+    buildTypes {
+        debug {
+        }
+    }
+
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.0.2'
+                }
+            }
+        }
+    }
+
+
+  //  buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    compile librarys.rxjava
+    compile librarys.rxbind2
+    compile librarys.rxbind2_v4
+    compile librarys.rxbind2_v7
+    compile librarys.rxandroid
+    compile librarys.rxlifecycle
+    compile librarys.rxlifecycle_components
+    compile librarys.rxlifecycle_com_perfer
+    compile librarys.rxpermissions
+    compile librarys.retrofit
+    compile librarys.adapter_rxjava
+    compile librarys.converter_gson
+    compile librarys.converter_str
+    compile librarys.logging_interceptor
+    compile librarys.blockcanary
+    compile librarys.swipebacklayout
+    compile librarys.gson
+    compile librarys.crashreport
+    compile librarys.nativecrashreport
+    compile librarys.smart_refresh_layout
+    compile librarys.smartrefreshheader
+    compile librarys.orhanobut_logger
+    compile librarys.countdownview
+    compile librarys.flowlayout
+    compile librarys.androideventbus
+    compile librarys.ninegridview
+    compile librarys.BaseRecyclerViewAdapterHelper
+    compile librarys.cardviewV7
+    compile librarys.multidex
+    compile librarys.glide
+    annotationProcessor librarys.glide_processor
+    compile librarys.fragmentation
+    compile librarys.glide_transformations
+    compile librarys.fastjson
+    compile librarys.FlycoTabLayout_Lib
+    compile librarys.FlycoRoundView_Lib
+    compile librarys.appcompatV7
+    compile librarys.banner
+    compile librarys.recovery
+    compile librarys.versitonCheck
+    // 版本检测
+    compile librarys.xtablayout
+    compile librarys.time_line_view
+    compile librarys.basePopup
+    compile librarys.arouterApi
+    compile librarys.tinypinyin
+    compile librarys.AndroidPickerView
+    compile librarys.utilcode
+    compile librarys.zxingCore
+    compile librarys.richtext
+    compile librarys.aviLibrary
+    compile librarys.circleImageView
+    compile librarys.pullLoadMoreRecyclerView
+    compile librarys.switchButton
+    compile librarys.recyclerViewSwipe
+    compile librarys.constraintLayout
+    compile librarys.gifDrawable
+    compile librarys.butterKnife
+    compile librarys.floatingActionButton
+    compile librarys.flycoTabLayout
+    compile librarys.meterialRipple
+    compile librarys.simpleAndroidEventBus
+    compile librarys.bubbleSeekBar
+    compile librarys.kotlinStdlibJre7
+    compile librarys.bgaBanner
+   // compile librarys.MPAndroidChart
+    compile librarys.netmonitor
+    compile librarys.magicIndicator
+    compile librarys.luban
+    compile librarys.roundedImageView
+    compile librarys.badgeview
+    compile librarys.niceimageview
+    compile librarys.fab
+    // compile project(':FoxArouter')
+    //由于在依赖foxman的时候发现把依赖库配在config.gradle 并不方便 要放进来 以下是和聊天相关的库
+    compile 'com.lqr.adapter:library:1.0.2'
+    compile 'com.lqr.recyclerview:library:1.0.2'
+    compile 'com.lqr.imagepicker:library:1.0.0'
+    compile 'com.lqr.ninegridimageview:library:1.0.0'
+    compile 'com.lqr.optionitemview:library:1.0.7'
+    compile 'com.lqr.emoji:library:1.0.2'
+  //  compile 'com.lqr.audio:library:1.0.0'
+    compile 'com.lqr.imagepicker:library:1.0.0'
+    //    compile 'org.litepal.android:core:1.5.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7'
+    compile 'cjt.library.wheel:camera:0.1.9'
+    compile 'com.lovedise:permissiongen:0.0.6'
+    compile files('libs/litepal-2.0.0.jar')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //版本更新
+    compile 'com.qianwen:update-app:3.5.2'
+    compile 'com.lzy.net:okgo:3.0.4'
+    //验证码输入框
+    api 'com.jacktuotuo.customview:verificationcodeview:1.0.4'
+
+    //圆角
+    compile 'com.github.open-android:RoundedImageView:v1.0.0'
+
+
+    compile 'com.github.yilylong:CBDialog:v1.0.7'
+}
+repositories {
+    mavenCentral()
+}
+
+
+
+
+
+

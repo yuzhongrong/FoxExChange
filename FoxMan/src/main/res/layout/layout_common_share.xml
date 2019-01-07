@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingRight="@dimen/dp50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_share_wechat"
+                android:textSize="@dimen/sp12"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_333333"
+                android:text="微信"/>
+
+            <TextView
+                android:id="@+id/tv_wechat_friend"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_share_friend_circle"
+                android:textSize="@dimen/sp12"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_333333"
+                android:text="朋友圈"/>
+            <TextView
+                android:id="@+id/tv_qqzone"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_share_qzone"
+                android:textSize="@dimen/sp12"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_333333"
+                android:text="QQ空间"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp27"
+            android:paddingLeft="@dimen/dp97"
+            android:paddingRight="@dimen/dp97"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_qq_friend"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_share_qq"
+                android:textSize="@dimen/sp12"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_333333"
+                android:text="QQ好友"/>
+            <TextView
+                android:id="@+id/tv_weibo"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_share_weibo"
+                android:textSize="@dimen/sp12"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_333333"
+                android:text="微博"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pop_commodity_share_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp47"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp16"/>
+    </LinearLayout>
+</LinearLayout>

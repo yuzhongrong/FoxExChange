@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        style="@style/pay_layout"
+        android:gravity="center_vertical"
+        >
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/str_trade_amount"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+        <TextView
+            android:id="@+id/c2c_trade_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="-----"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/pay_layout"
+        android:gravity="center_vertical"
+        >
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/str_rmb"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+        <TextView
+            android:id="@+id/c2c_trade_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="@string/str_default"
+            style="@style/pay_layout_textstype"
+            android:textColor="@color/color_FF5755"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/pay_layout"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/str_c2c_create_bank"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+        <TextView
+            android:id="@+id/c2c_create_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="-----"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/pay_layout"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/str_bank_sub"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+        <TextView
+            android:id="@+id/c2c_bank_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="-----"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/pay_layout"
+        android:gravity="center_vertical"
+        >
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/str_payee"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+        <TextView
+            android:id="@+id/c2c_target_people"
+            style="@style/pay_layout_textstype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="-----"
+
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/pay_layout"
+        android:gravity="center_vertical"
+        >
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="@string/str_c2c_bank_account"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+        <TextView
+            android:id="@+id/c2c_bank_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="-----"
+            style="@style/pay_layout_textstype"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

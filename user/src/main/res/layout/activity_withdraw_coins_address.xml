@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/no_address_ly"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp90"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:src="@mipmap/icon_add_address"/>
+
+            <Button
+                android:id="@+id/btn_no_address_add"
+                android:layout_width="@dimen/dp96"
+                android:layout_height="@dimen/dp30"
+                android:text="@string/str_user_add_address"
+                android:background="@mipmap/bg_upload_blue_frame_white_btn"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:textSize="@dimen/dp12"
+                android:textColor="@color/color_0994FE"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/address_list_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:padding="@dimen/dp15">
+
+            <com.lqr.recyclerview.LQRRecyclerView
+                android:id="@+id/lqr_coins_address_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_divider_color="@color/color_00000000"
+                app:rv_divider_size="@dimen/dp10"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

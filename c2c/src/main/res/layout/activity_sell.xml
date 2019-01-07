@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+   >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <com.foxexchange.c2c.widget.PayStateLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                />
+
+    <com.foxexchange.c2c.widget.OrderInfoTabLayout
+                android:id="@+id/orderinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_ff32395e_bg"
+                android:padding="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_below="@+id/top"
+
+               />
+
+
+
+
+
+
+
+
+
+            <com.foxexchange.c2c.widget.BottomTipLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/shape_ff181b2c_bg"
+                android:padding="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp50"
+
+
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_c2c_buy_warning_tip"
+                    android:textColor="@color/color_ff00a4f1"
+                    android:textSize="@dimen/dp13"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableLeft="@mipmap/icon_warining"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_c2c_buy_warinig_tip_value"
+                    android:textColor="@color/color_ffc3cdff"
+                    android:textSize="@dimen/dp11"
+                    android:layout_marginTop="@dimen/dp19"
+                    />
+
+
+            </com.foxexchange.c2c.widget.BottomTipLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp45"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="@dimen/dp25"
+        android:layout_height="@dimen/dp25"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_back"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp18"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/ic_right"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/more"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dp15"
+        android:visibility="gone"
+
+
+
+        />
+
+</RelativeLayout>

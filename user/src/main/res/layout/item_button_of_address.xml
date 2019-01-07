@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F5F5F5">
+
+    <Button
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:textSize="@dimen/dp18"
+        android:layout_marginTop="@dimen/dp30"
+        android:textColor="@color/color_FFFFFF"
+        android:text="@string/str_user_add_address"
+        android:background="@mipmap/bg_blue_btn"/>
+
+</LinearLayout>

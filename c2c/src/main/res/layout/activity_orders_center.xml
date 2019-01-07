@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+    >
+
+
+    <include
+        android:id="@+id/root"
+        layout="@layout/common_toolbar" />
+
+<fragment
+    android:id="@+id/c2c_order_center_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.foxexchange.c2c.fragments.C2CLegalBiFragment"
+    android:layout_below="@+id/root"
+    />
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

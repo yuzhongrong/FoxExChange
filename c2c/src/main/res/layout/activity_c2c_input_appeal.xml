@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+    >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_c2c_appeal_type"
+                android:textColor="@color/color_ffc3cdff"
+                android:textSize="@dimen/dp12"
+                />
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:hint="选择问题类型"
+                android:textColorHint="@color/color_6C749D"
+                android:textSize="@dimen/dp14"
+                android:background="@color/color_ff1e2238"
+                android:paddingLeft="@dimen/dp10"
+                android:drawableRight="@drawable/icon_draw_down"
+                android:drawablePadding="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:textColor="@color/color_ffffff"
+                android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                android:layout_marginTop="@dimen/dp5"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_c2c_appeal_reason"
+                android:textColor="@color/color_ffc3cdff"
+                android:textSize="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp27"
+                />
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp230"
+                android:hint="选择问题类型"
+                android:textColorHint="@color/color_6C749D"
+                android:textSize="@dimen/dp14"
+                android:background="@color/color_ff1e2238"
+                android:paddingLeft="@dimen/dp10"
+                android:drawablePadding="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:textColor="@color/color_ffffff"
+                android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+                android:gravity="top"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp18"
+                android:maxLength="300"
+                android:layout_marginTop="@dimen/dp5"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50/300"
+                    android:textColor="@color/color_6C749D"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginBottom="@dimen/dp2"
+                    />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/shape_ff181b2c_bg"
+                android:padding="@dimen/dp10"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_c2c_buy_warning_tip"
+                    android:textColor="@color/color_ff00a4f1"
+                    android:textSize="@dimen/dp13"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableLeft="@mipmap/icon_warining"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_c2c_appeal_warning"
+                    android:textColor="@color/color_ffc3cdff"
+                    android:textSize="@dimen/dp11"
+                    android:layout_marginTop="@dimen/dp19"
+                    />
+
+
+            </LinearLayout>
+
+
+            <com.foxexchange.common.widgets.CustomerTextView
+                android:id="@+id/c2c_action_appeal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:text="@string/str_c2c_action_appeal"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dp16"
+                android:padding="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp26"
+                android:background="@drawable/shape_ff0994fe_bg"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp18"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

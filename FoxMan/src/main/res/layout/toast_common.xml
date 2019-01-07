@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--自定义吐司样式-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout_bg_toast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sw_common_toast_btn_bg"
+    android:paddingLeft="@dimen/dp20"
+    android:paddingRight="@dimen/dp20"
+    android:paddingTop="@dimen/dp12"
+    android:paddingBottom="@dimen/dp12">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_toast_icon"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp8"
+            android:src="@mipmap/icon_vhkd" />
+
+        <TextView
+            android:id="@+id/tv_toast_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="12333"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp13" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

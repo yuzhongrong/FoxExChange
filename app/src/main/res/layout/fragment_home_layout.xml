@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_181B2C"
+
+    >
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableRefresh="false"
+    app:srlEnableLoadmore="false"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/root_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1E2238"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:text="@string/str_home_ad"
+            android:textColor="@color/color_ffc3cdff"
+            android:textSize="@dimen/dp14"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_ad"
+            android:paddingLeft="@dimen/dp15"
+            android:drawablePadding="@dimen/dp12"
+            android:paddingBottom="@dimen/dp14"
+            android:paddingTop="@dimen/dp14" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/root_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp85"
+        android:background="@color/color_181B2C"
+        android:gravity="center"
+        >
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/segmenttablayout"
+            android:layout_width="@dimen/dp251"
+            android:layout_height="@dimen/dp35"
+            app:tl_bar_stroke_color="@color/color_1E2238"
+            app:tl_textSelectColor="@color/color_ffffff"
+            app:tl_textUnselectColor="@color/color_ffffff"
+            app:tl_divider_color="@color/color_1E2238"
+            app:tl_bar_color="@android:color/transparent"
+            app:tl_bar_stroke_width="@dimen/dp0.5"
+            app:tl_divider_width="@dimen/dp0.5"
+            app:tl_indicator_color="@color/color_FF5755"
+            app:tl_indicator_corner_radius="@dimen/dp5"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tablayoutcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp14"
+                android:textColor="@color/color_ffffff"
+                android:text="帮助中文"
+                android:drawableLeft="@drawable/helper"
+                android:drawablePadding="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp15"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp10"
+
+                />
+
+        </RelativeLayout>
+
+
+       <View
+           style="@style/line" />
+
+    <com.cjwsc.idcm.base.ui.widget.NoScroolListView
+        android:id="@+id/homelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_343B60"
+        android:dividerHeight="@dimen/dp0.5"
+
+        />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

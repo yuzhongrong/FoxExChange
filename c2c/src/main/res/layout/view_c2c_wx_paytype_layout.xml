@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_181B2C"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_name"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="@string/str_c2c_name_hint"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+    <TextView
+        android:id="@+id/c2c_wx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信账号"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_wx_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="@string/str_c2c_wx_account"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+    <TextView
+        android:id="@+id/c2c_open_bank_sub_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收款二维码"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/c2c_scan_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp113"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp11"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传微信收款二维码"
+            android:textColor="@color/color_6C749D"
+            android:textSize="@dimen/dp14"
+            android:drawableTop="@mipmap/icon_add"
+            android:drawablePadding="@dimen/dp14"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_c2c_support_img_format"
+            android:textColor="@color/color_ff545b7f"
+            android:textSize="@dimen/dp11"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微信收款二维码获取方发：打开微信APP,在我的钱包页面点击“首付款”，在收款页面点击收款二维码，然后在二维码下方点击“保存收款码”即可。"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp11"
+        android:layout_marginTop="@dimen/dp10"
+
+        />
+
+
+    <TextView
+        android:id="@+id/c2c_bank_pwd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_capital_password"
+        android:textColor="@color/color_ffc3cdff"
+        android:textSize="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp18"
+        />
+
+
+    <EditText
+        android:id="@+id/c2c_bank_pwd_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/shape_1e2238_border"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="请填写您的资金密码"
+        android:textColorHint="@color/color_6C749D"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp40"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/dp14"
+        android:singleLine="true"
+        android:textColor="@color/color_ffffff"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+        />
+
+
+</LinearLayout>
+</RelativeLayout>

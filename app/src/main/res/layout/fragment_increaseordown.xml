@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:background="@color/color_181B2C"
+        android:gravity="center_vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp13"
+            android:textColor="@color/color_c3cdff"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:text="@string/str_24h"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp13"
+            android:textColor="@color/color_c3cdff"
+            android:layout_centerInParent="true"
+            android:text="@string/str_24h_price"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp13"
+            android:textColor="@color/color_c3cdff"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="@string/str_24h_inpreaseordown"
+            android:layout_marginRight="@dimen/dp15"
+            />
+
+    </RelativeLayout>
+
+
+    <!--<com.lqr.recyclerview.LQRRecyclerView-->
+        <!--android:id="@+id/datalist"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/top_layout"-->
+        <!--android:background="@color/color_1E2238"-->
+        <!--/>-->
+
+    <include
+        layout="@layout/item_inpreasedown1" />
+
+    <include
+        layout="@layout/item_inpreasedown2" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:layout_marginTop="@dimen/dp20"
+            android:textColor="@color/color_0994FE"
+            android:textSize="@dimen/dp24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_5E6683"
+            android:textSize="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="输入发送到以下电话号码的验证码"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_5E6683"
+            android:textSize="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="***********"/>
+
+
+        <com.jyn.vcview.VerificationCodeView
+            android:id="@+id/view_verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:vcv_et_inputType="number"
+            app:vcv_et_number="6"
+            app:vcv_et_text_color="@color/color_FFFFFF"
+            app:vcv_et_text_size="6sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_5E6683"
+            android:textSize="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="没有收到验证码？"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_5E6683"
+                android:textSize="@dimen/dp13"
+                android:text="请稍后"/>
+
+            <com.cjwsc.idcm.widget.edittext.EndEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textColor="@color/color_0994FE"
+                android:textSize="@dimen/dp13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

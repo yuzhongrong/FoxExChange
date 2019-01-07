@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_32395E"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View
+            style="@style/marginLeftRightLineNomargin"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_00a4f1"
+            android:textSize="@dimen/dp11"
+            android:text="@string/str_c2c_sell_warning"
+            android:layout_marginTop="@dimen/dp14"
+
+            />
+
+
+        <com.foxexchange.common.widgets.CustomerTextView
+            android:id="@+id/c2c_btn_payed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:text="放行（14分15秒）"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dp16"
+            android:padding="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/shape_ff0994fe_bg"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

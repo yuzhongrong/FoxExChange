@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#60000000"
+                android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/innerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:gravity="center"
+            android:text="选择图片来源"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp12"
+            />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            />
+
+        <TextView
+            android:id="@+id/photo_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp14"
+            />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            />
+
+        <TextView
+            android:id="@+id/camera_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:gravity="center"
+            android:text="相机"
+            android:textColor="@color/color_333333"
+            />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_333333"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+   >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <com.foxexchange.c2c.widget.PayStateLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                />
+    <com.foxexchange.c2c.widget.OrderInfoTabLayout
+                android:id="@+id/orderinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp133"
+                android:background="@drawable/shape_ff32395e_bg"
+                android:padding="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_below="@+id/top"
+
+               />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+

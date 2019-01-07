@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+   >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:id="@+id/orderinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp133"
+                android:background="@drawable/shape_ff32395e_bg"
+                android:padding="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_below="@+id/top"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/c2c_buytype_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_buy_saleout_up"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/dp13"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/c2c_simple_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_simple_price"
+                        android:textColor="#ffc3cdff"
+                        android:textSize="@dimen/dp12"
+                        android:layout_below="@+id/c2c_buytype_title"
+                        android:layout_marginTop="@dimen/dp15"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/c2c_pay_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_c2c_buy_people"
+                        android:textColor="#ffc3cdff"
+                        android:textSize="@dimen/dp12"
+                        android:layout_below="@+id/c2c_simple_price"
+                        android:layout_marginTop="@dimen/dp15"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp30"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/id_simple_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----"
+                        android:textColor="@color/color_ffc3cdff"
+                        android:textSize="@dimen/dp11"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+                    <com.foxexchange.common.widgets.CustomerTextView
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/id_simple_price"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:text="@string/str_nickname_demo"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/dp11"
+
+                        />
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:src="@mipmap/icon_avatar"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp32"
+                        android:visibility="gone"
+
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bankinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp346"
+                android:background="@drawable/shape_ff32395e_bg"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+
+                >
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10"
+                    android:layout_below="@+id/paytype"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_c2c_sellnum"
+                        android:textColor="@color/color_ffc3cdff"
+                        android:textSize="@dimen/dp12"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---- "
+                        android:textColor="@color/color_FF5755"
+                        android:textSize="@dimen/dp14"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10"
+                    android:layout_below="@+id/line1"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_c2c_limit_money"
+                        android:textColor="@color/color_ffc3cdff"
+                        android:textSize="@dimen/dp12"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---- "
+                        android:textColor="@color/color_FF5755"
+                        android:textSize="@dimen/dp14"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/str_c2c_trade_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易金额"
+                    android:textColor="#ffc3cdff"
+                    android:textSize="@dimen/dp12"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginLeft="@dimen/dp8"
+
+                    />
+                
+
+                <FrameLayout
+                    android:id="@+id/c2c_trade_money_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_below="@+id/str_c2c_trade_num"
+                    >
+
+                    <EditText
+                        android:id="@+id/c2c_trade_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_c3cdff_border"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:hint="@string/str_c2c_money_hint"
+                        android:textColorHint="@color/color_6C749D"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp40"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/dp14"
+                        android:singleLine="true"
+                        android:textColor="@color/color_ffffff"
+                        android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/dp14"
+                        android:layout_gravity="right|center"
+                        android:text="CNY"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp5"
+                        />
+
+                </FrameLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/str_c2c_trade_num_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易数量"
+                    android:textColor="#ffc3cdff"
+                    android:textSize="@dimen/dp12"
+                    android:layout_below="@+id/c2c_trade_money_root"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp10"
+
+
+
+                    />
+
+
+                <FrameLayout
+                    android:id="@+id/c2c_trade_num_value_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_below="@+id/str_c2c_trade_num_tip"
+                    >
+
+                <EditText
+                    android:id="@+id/c2c_trade_num_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_c3cdff_border"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:hint="@string/str_c2c_maybe_num"
+                    android:textColorHint="@color/color_6C749D"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp100"
+                    android:textSize="@dimen/dp14"
+                    android:singleLine="true"
+                    android:textColor="@color/color_ffffff"
+                    android:textCursorDrawable="@drawable/shape_edittext_cursor_bg"
+
+
+                    />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_ffffff"
+                        android:textSize="@dimen/dp14"
+                        android:layout_gravity="right|center"
+                        android:text="UP"
+                        android:layout_marginRight="@dimen/dp85"
+                        android:layout_marginTop="@dimen/dp5"
+                        />
+
+                    <View
+                        android:layout_width="@dimen/dp1"
+                        android:layout_height="@dimen/dp20"
+                        android:background="@color/color_4A558E"
+                        android:layout_marginRight="@dimen/dp75"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_gravity="right|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部出售"
+                        android:textColor="#ff0994fe"
+                        android:textSize="@dimen/dp13"
+                        android:layout_gravity="right|center"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginRight="@dimen/dp18"
+                        />
+
+
+                </FrameLayout>
+
+                <com.foxexchange.common.widgets.CustomerTextView
+                    android:id="@+id/c2c_btn_action_sell"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp45"
+                    android:text="卖出(45s)"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="@dimen/dp16"
+                    android:padding="@dimen/dp13"
+                    android:layout_marginTop="@dimen/dp26"
+                    android:background="@drawable/shape_ff0994fe_bg"
+                    android:layout_below="@+id/c2c_trade_num_value_root"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:inputType="numberDecimal"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+

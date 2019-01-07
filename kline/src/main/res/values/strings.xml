@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">kline</string>
+    <string name="str_exchange_minprice_24h">24H最低价</string>
+    <string name="str_exchange_maxprice_24h">24H最高价</string>
+    <string name="str_exchange_more">更多</string>
+    <string name="str_k_max">高</string>
+    <string name="str_k_ma">MA</string>
+    <string name="str_k_ma5">5:</string>
+    <string name="str_k_ma10">10:</string>
+    <string name="str_k_ma20">20:</string>
+    <string name="str_k_ma30">30:</string>
+
+    <string name="str_entity_macd">MACD</string>
+    <string name="str_entity_kdj">KDJ</string>
+    <string name="str_entity_wr">WR</string>
+    <string name="str_entity_rsi">RSI</string>
+    <string name="str_entity_boll">BOLL</string>
+    <string name="str_entity_expma">EXPMA</string>
+    <string name="str_entity_dmi">DMI</string>
+    <string name="str_wan_unit">万手</string>
+    <string name="str_yi_unit">亿手</string>
+    <string name="str_exchange_minus_hour">分时</string>
+    <string name="str_15m">15分</string>
+    <string name="str_1h">1小时</string>
+    <string name="str_4h">4小时</string>
+    <string name="str_1d">1天</string>
+    <string name="str_depth_img">深度图</string>
+    <string name="str_trade_now">实时成交</string>
+    <string name="str_bit_introduce">币种介绍</string>
+    <string name="str_kline_time">时间</string>
+    <string name="str_kline_orientation">方向</string>
+    <string name="str_kline_price">价格</string>
+    <string name="str_kline_num">数量</string>
+
+
+</resources>

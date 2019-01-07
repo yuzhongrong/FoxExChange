@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_181B2C"
+   >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <com.foxexchange.c2c.widget.PayStateLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                />
+
+    <com.foxexchange.c2c.widget.OrderInfoTabLayout
+                android:id="@+id/orderinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_ff32395e_bg"
+                android:padding="@dimen/dp12"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_below="@+id/top"
+
+               />
+
+
+
+            <com.foxexchange.c2c.widget.SwitchActionRootLayout
+                android:id="@+id/bankinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_ff32395e_bg"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+
+                >
+
+                <com.foxexchange.c2c.widget.PayTypeLayout
+                    android:id="@+id/paytype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10"
+                    android:layout_below="@+id/paytype"
+                    >
+
+
+
+
+                    <com.foxexchange.c2c.widget.SwitchTabLayout
+                        android:id="@+id/c2c_paycontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+
+                    <View
+                        android:layout_marginTop="@dimen/dp20"
+                        style="@style/marginLeftRightLine" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp30"
+                        android:text="@string/str_c2c_buy_tip_warning"
+                        android:textColor="@color/color_ff00a4f1"
+                        android:textSize="@dimen/dp11"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.foxexchange.common.widgets.CustomerTextView
+                            android:id="@+id/c2c_btn_cancel"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="@dimen/dp45"
+                            android:text="@string/str_c2c_cancelorder"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/dp16"
+                            android:padding="@dimen/dp13"
+                            android:layout_marginTop="@dimen/dp26"
+                            android:background="@drawable/shape_ff6470a9_bg"
+
+                            />
+
+                        <com.foxexchange.common.widgets.CustomerTextView
+                            android:id="@+id/c2c_btn_payed"
+                            android:layout_width="@dimen/dp200"
+                            android:layout_height="@dimen/dp45"
+                            android:text="我已付款(29分15秒)"
+                            android:textColor="@color/color_ffffff"
+                            android:textSize="@dimen/dp16"
+                            android:padding="@dimen/dp13"
+                            android:layout_marginTop="@dimen/dp26"
+                            android:background="@drawable/shape_ff0994fe_bg"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </com.foxexchange.c2c.widget.SwitchActionRootLayout>
+
+
+            <com.foxexchange.c2c.widget.AppealActionTextView
+                android:id="@+id/c2c_btn_appeal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:text="@string/str_c2c_appeal_time"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dp16"
+                android:padding="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/shape_no_color_bg"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp15"
+                android:gravity="center"
+                android:visibility="gone"
+
+
+                />
+
+
+            <com.foxexchange.c2c.widget.BottomTipLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/shape_ff181b2c_bg"
+                android:padding="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp50"
+
+
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_c2c_buy_warning_tip"
+                    android:textColor="@color/color_ff00a4f1"
+                    android:textSize="@dimen/dp13"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableLeft="@mipmap/icon_warining"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_c2c_buy_warinig_tip_value"
+                    android:textColor="@color/color_ffc3cdff"
+                    android:textSize="@dimen/dp11"
+                    android:layout_marginTop="@dimen/dp19"
+                    />
+
+
+            </com.foxexchange.c2c.widget.BottomTipLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--基础键盘-->
+    <integer name="keycode_empty_text">-10000</integer>
+    <integer name="keycode_hide_keyboard">-10001</integer>
+
+    <!--股票价钱键盘-->
+    <integer name="keycode_cur_price">-10100</integer>
+
+    <!--股票数量键盘-->
+    <integer name="keycode_stocknum_000">-10200</integer>
+    <integer name="keycode_stocknum_all">-10201</integer>
+    <integer name="keycode_stocknum_half">-10202</integer>
+    <integer name="keycode_stocknum_1_3">-10203</integer>
+    <integer name="keycode_stocknum_1_4">-10204</integer>
+    <integer name="keycode_stock_sell">-10205</integer>
+    
+    <!--idcm自定义键盘-->
+    <integer name="keycode_limit_price">-20000</integer>
+    <integer name="keycode_market_price">-20001</integer>
+
+    <integer name="keycode_add">-20002</integer>
+    <integer name="keycode_reduce">-20003</integer>
+
+    <integer name="keycode_stub">-20004</integer>
+
+
+    <item type="id" name="keyboard_view_move_height" />
+    <item type="id" name="edittext_bind_keyboard" />
+    
+    
+</resources>
